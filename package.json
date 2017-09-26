@@ -10,5 +10,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fernando Poumian",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "devicon-2.2": "^2.2.0",
+    "fs-extra": "^4.0.2",
+    "svgo": "^0.7.2"
+  },
+  "devDependencies": {
+    "chokidar": "^1.6.1",
+    "npm-run-all": "4.0.2",
+    "nunjucks": "^3.0.1",
+    "pascal-case": "^2.0.1",
+    "react-docgen": "2.14.0"
+  }
 }
