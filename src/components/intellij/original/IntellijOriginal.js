@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
 import iconSVG from './IntellijOriginal.svg'
-import { normalizeUnit } from '../../../utils.js'
+import { normalizeUnit } from '../../utils.js'
 
 /** IntellijOriginal */
 function IntellijOriginal({width, height}) {

@@ -8,7 +8,9 @@
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-source-filesystem": "^1.5.1",
-    "gatsby-transformer-json": "^1.0.7"
+    "gatsby-transformer-json": "^1.0.7",
+    "pascal-case": "^2.0.1",
+    "raw-loader": "^0.5.1"
   },
   "keywords": [
     "gatsby"

@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
 import iconSVG from './PhpstormPlain.svg'
-import { normalizeUnit } from '../../../utils.js'
+import { normalizeUnit } from '../../utils.js'
 
 /** PhpstormPlain */
 function PhpstormPlain({width, height}) {

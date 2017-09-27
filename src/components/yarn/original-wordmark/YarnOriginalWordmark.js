@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
 import iconSVG from './YarnOriginalWordmark.svg'
-import { normalizeUnit } from '../../../utils.js'
+import { normalizeUnit } from '../../utils.js'
 
 /** YarnOriginalWordmark */
 function YarnOriginalWordmark({width, height}) {

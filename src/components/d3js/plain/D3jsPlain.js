@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
 import iconSVG from './D3jsPlain.svg'
-import { normalizeUnit } from '../../../utils.js'
+import { normalizeUnit } from '../../utils.js'
 
 /** D3jsPlain */
 function D3jsPlain({width, height}) {

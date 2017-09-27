@@ -1,13 +1,14 @@
-import React from "react"
-import PropTypes from "prop-types"
-import SVGInline from "react-svg-inline"
-import iconSVG from "./AmazonwebservicesOriginal.svg"
-import { normalizeUnit } from "../../utils.js"
+
+import React from 'react'
+import PropTypes from 'prop-types'
+import SVGInline from 'react-svg-inline'
+import iconSVG from './AmazonwebservicesOriginal.svg'
+import { normalizeUnit } from '../../utils.js'
 
 /** AmazonwebservicesOriginal */
-function AmazonwebservicesOriginal({ width, height }) {
+function AmazonwebservicesOriginal({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

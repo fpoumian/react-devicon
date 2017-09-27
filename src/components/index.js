@@ -1,0 +1,7 @@
+export AmazonwebservicesOriginal from "./amazonwebservices/original"
+export AmazonwebservicesOriginalWordmark from "./amazonwebservices/original-wordmark"
+export AmazonwebservicesPlainWordmark from "./amazonwebservices/plain-wordmark"
+export AndroidOriginal from "./android/original"
+export AndroidOriginalWordmark from "./android/original-wordmark"
+export AndroidPlain from "./android/plain"
+export AndroidPlainWordmark from "./android/plain-wordmark"
