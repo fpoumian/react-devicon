@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CucumberPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CucumberPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

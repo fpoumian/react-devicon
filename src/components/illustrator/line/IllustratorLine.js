@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function IllustratorLine({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="IllustratorLine"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

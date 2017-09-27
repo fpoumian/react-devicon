@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function MongodbOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="MongodbOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

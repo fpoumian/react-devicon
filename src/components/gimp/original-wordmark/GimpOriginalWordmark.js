@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GimpOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GimpOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

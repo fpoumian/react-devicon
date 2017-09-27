@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AtomOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AtomOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

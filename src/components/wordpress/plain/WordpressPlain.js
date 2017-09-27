@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function WordpressPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="WordpressPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

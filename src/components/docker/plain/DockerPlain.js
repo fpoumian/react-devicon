@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DockerPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DockerPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

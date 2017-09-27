@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GoogleOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GoogleOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

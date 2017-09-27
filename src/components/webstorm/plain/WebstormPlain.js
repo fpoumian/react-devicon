@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function WebstormPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="WebstormPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

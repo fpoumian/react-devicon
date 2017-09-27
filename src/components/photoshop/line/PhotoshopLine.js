@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function PhotoshopLine({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="PhotoshopLine"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

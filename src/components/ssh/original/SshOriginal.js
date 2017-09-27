@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SshOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SshOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

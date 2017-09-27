@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SourcetreeOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SourcetreeOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

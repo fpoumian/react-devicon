@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function LinuxOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="LinuxOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

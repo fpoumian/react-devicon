@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function BehanceOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="BehanceOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

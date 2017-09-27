@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AngularjsPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AngularjsPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

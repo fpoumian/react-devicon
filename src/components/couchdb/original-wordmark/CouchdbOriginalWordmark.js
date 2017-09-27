@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CouchdbOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CouchdbOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

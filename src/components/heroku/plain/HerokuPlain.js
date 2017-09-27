@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function HerokuPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="HerokuPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

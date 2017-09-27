@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ElectronOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ElectronOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

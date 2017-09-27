@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GatlingPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GatlingPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

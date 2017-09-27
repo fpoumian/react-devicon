@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DebianOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DebianOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

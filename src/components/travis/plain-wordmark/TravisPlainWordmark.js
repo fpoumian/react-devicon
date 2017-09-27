@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function TravisPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="TravisPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

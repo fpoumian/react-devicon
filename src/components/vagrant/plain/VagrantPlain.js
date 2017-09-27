@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function VagrantPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="VagrantPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

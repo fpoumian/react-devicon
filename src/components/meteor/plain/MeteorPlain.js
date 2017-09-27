@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function MeteorPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="MeteorPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

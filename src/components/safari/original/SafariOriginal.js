@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SafariOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SafariOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

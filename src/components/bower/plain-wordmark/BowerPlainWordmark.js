@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function BowerPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="BowerPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

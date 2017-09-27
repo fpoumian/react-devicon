@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function BootstrapPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="BootstrapPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

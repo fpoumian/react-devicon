@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function StylusOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="StylusOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

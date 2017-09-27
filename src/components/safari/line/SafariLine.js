@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SafariLine({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SafariLine"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

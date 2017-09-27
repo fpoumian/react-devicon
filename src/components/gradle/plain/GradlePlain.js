@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GradlePlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GradlePlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

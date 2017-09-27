@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GitlabOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GitlabOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

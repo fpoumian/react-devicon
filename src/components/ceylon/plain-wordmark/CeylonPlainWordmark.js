@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CeylonPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CeylonPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function NpmOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="NpmOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

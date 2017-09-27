@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function VuejsPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="VuejsPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

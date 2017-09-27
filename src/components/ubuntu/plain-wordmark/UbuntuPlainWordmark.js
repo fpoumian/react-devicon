@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function UbuntuPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="UbuntuPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SshOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SshOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

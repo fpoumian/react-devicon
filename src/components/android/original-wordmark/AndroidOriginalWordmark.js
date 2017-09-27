@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AndroidOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AndroidOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

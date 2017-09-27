@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DoctrinePlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DoctrinePlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

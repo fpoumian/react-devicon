@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function KrakenjsPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="KrakenjsPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GruntPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GruntPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

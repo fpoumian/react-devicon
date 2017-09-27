@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function RedhatPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="RedhatPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

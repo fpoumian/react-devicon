@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function TwitterOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="TwitterOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

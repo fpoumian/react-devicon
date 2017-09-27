@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CplusplusOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CplusplusOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DrupalOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DrupalOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

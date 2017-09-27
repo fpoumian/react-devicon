@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SassOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SassOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

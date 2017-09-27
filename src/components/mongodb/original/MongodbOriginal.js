@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function MongodbOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="MongodbOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

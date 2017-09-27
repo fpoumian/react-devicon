@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function HandlebarsOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="HandlebarsOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

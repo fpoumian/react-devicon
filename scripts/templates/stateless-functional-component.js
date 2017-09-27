@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function {{ componentName }}({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="{{ componentName }}"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

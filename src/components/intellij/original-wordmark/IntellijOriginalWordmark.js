@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function IntellijOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="IntellijOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function FacebookOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="FacebookOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

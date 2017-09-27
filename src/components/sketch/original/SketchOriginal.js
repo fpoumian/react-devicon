@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SketchOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SketchOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

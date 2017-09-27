@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function Css3Original({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="Css3Original"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function PhpstormPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="PhpstormPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

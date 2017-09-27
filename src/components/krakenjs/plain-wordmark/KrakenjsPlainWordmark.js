@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function KrakenjsPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="KrakenjsPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

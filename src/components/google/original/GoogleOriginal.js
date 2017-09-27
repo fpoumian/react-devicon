@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GoogleOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GoogleOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

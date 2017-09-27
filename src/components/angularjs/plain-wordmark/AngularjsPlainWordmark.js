@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AngularjsPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AngularjsPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

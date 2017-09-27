@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function TrelloPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="TrelloPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function TomcatLine({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="TomcatLine"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

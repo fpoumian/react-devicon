@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function D3jsPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="D3jsPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

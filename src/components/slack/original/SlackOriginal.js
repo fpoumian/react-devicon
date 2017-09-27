@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SlackOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SlackOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

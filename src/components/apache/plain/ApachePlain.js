@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ApachePlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ApachePlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

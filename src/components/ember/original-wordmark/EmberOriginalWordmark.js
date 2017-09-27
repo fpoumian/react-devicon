@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function EmberOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="EmberOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

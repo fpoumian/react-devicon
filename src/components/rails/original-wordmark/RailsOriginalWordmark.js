@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function RailsOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="RailsOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

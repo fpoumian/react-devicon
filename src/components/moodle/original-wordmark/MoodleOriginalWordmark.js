@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function MoodleOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="MoodleOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

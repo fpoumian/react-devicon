@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DoctrineOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DoctrineOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

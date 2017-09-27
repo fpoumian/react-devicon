@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function JqueryOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="JqueryOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

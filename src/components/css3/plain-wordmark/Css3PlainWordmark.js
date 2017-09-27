@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function Css3PlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="Css3PlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

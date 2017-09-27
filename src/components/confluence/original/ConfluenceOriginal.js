@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ConfluenceOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ConfluenceOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

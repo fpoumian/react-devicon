@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AppceleratorOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AppceleratorOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

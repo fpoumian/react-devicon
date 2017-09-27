@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ErlangPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ErlangPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

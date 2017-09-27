@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function RedisOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="RedisOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function JeetOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="JeetOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

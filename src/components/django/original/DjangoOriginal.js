@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DjangoOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DjangoOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

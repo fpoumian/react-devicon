@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CsharpPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CsharpPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

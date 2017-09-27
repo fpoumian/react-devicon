@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function YiiOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="YiiOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

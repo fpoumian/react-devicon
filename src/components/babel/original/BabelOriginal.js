@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function BabelOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="BabelOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CouchdbPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CouchdbPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

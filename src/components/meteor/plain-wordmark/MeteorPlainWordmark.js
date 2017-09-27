@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function MeteorPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="MeteorPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

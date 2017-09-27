@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AmazonwebservicesPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AmazonwebservicesPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

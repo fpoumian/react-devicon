@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function MysqlPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="MysqlPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

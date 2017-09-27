@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function InkscapePlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="InkscapePlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

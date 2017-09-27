@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function VisualstudioPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="VisualstudioPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

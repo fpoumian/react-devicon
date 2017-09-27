@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ElmPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ElmPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function NginxOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="NginxOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

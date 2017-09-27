@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function IonicOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="IonicOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

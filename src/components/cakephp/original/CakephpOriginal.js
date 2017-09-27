@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CakephpOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CakephpOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

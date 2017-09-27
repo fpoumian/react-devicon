@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function RubyminePlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="RubyminePlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

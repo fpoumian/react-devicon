@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function BitbucketOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="BitbucketOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GitlabOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GitlabOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

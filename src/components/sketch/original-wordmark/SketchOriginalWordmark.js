@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SketchOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SketchOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

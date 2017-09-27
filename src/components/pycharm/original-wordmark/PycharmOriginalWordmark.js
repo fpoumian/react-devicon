@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function PycharmOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="PycharmOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function WebpackPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="WebpackPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

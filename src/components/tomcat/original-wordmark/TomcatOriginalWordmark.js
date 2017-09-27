@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function TomcatOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="TomcatOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

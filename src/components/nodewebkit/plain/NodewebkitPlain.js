@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function NodewebkitPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="NodewebkitPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function LinkedinOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="LinkedinOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

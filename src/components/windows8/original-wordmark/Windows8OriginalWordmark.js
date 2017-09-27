@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function Windows8OriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="Windows8OriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

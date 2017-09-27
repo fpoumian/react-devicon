@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GruntLine({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GruntLine"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

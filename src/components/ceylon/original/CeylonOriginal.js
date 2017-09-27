@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CeylonOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CeylonOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

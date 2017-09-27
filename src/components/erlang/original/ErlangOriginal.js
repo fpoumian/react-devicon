@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ErlangOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ErlangOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

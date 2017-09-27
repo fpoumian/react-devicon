@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function GoLine({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="GoLine"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

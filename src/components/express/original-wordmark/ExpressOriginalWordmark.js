@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ExpressOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ExpressOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

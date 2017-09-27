@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ReactOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ReactOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

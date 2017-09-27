@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function BootstrapPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="BootstrapPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

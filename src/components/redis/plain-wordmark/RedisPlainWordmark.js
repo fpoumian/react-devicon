@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function RedisPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="RedisPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

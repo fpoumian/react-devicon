@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ChromeOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ChromeOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

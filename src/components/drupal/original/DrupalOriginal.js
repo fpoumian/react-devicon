@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DrupalOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DrupalOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

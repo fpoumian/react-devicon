@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function RailsPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="RailsPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

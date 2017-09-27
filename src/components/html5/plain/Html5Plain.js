@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function Html5Plain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="Html5Plain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CoffeescriptOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CoffeescriptOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

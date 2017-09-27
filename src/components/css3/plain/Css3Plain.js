@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function Css3Plain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="Css3Plain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

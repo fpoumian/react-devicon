@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ZendPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ZendPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function RedhatPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="RedhatPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

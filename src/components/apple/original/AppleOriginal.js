@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AppleOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AppleOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

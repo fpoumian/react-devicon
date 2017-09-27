@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function IntellijOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="IntellijOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

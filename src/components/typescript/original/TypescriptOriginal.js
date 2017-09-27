@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function TypescriptOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="TypescriptOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

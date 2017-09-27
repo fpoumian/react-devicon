@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function MochaPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="MochaPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

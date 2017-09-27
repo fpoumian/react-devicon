@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function CakephpOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="CakephpOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

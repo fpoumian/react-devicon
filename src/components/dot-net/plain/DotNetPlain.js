@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DotNetPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DotNetPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

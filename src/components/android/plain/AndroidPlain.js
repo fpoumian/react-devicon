@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AndroidPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AndroidPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

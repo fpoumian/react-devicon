@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function WebpackOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="WebpackOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

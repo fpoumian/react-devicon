@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function PostgresqlPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="PostgresqlPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function PycharmPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="PycharmPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

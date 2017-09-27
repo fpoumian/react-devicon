@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function AppceleratorPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="AppceleratorPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

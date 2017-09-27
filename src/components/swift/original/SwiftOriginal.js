@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SwiftOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SwiftOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

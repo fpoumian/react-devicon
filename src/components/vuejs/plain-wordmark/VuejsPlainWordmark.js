@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function VuejsPlainWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="VuejsPlainWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

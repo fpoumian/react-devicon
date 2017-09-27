@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ApacheLineWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ApacheLineWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function YarnOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="YarnOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ChromeOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ChromeOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

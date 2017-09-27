@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function BehancePlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="BehancePlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

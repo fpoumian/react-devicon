@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function Ie10Original({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="Ie10Original"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

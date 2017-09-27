@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function JavaOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="JavaOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

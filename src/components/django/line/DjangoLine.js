@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function DjangoLine({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="DjangoLine"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

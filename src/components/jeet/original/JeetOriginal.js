@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function JeetOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="JeetOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

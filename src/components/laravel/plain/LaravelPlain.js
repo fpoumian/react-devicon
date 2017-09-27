@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function LaravelPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="LaravelPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

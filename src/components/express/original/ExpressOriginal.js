@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function ExpressOriginal({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="ExpressOriginal"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

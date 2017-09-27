@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function PhpPlain({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="PhpPlain"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}

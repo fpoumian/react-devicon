@@ -9,6 +9,8 @@ import { normalizeUnit } from '../../utils.js'
 function SequelizeOriginalWordmark({width, height}) {
   return (
      <SVGInline
+      classSuffix="-devicon"
+      className="SequelizeOriginalWordmark"
       svg={iconSVG}
       width={normalizeUnit(width)}
       height={normalizeUnit(height)}
