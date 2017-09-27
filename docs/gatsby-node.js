@@ -1,5 +1,17 @@
 const path = require("path")
 
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  config.merge({
+    resolve: {
+      alias: {
+        "react-devicon": path.resolve(__dirname, "../src/components")
+      }
+    }
+  })
+
+  return config
+}
+
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ boundActionCreators, graphql }) => {

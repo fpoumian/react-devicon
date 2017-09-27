@@ -16,6 +16,8 @@
     "chalk": "^2.1.0",
     "devicon-2.2": "^2.2.0",
     "fs-extra": "^4.0.2",
+    "lodash.isnumber": "^3.0.3",
+    "react-svg-inline": "^2.0.0",
     "svgo": "^0.7.2"
   },
   "devDependencies": {
