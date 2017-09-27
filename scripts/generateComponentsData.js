@@ -1,19 +1,12 @@
-
-var fs = require('fs')
+const fs = require('fs')
 const fse = require('fs-extra')
-var path = require('path')
-var chalk = require('chalk')
-var parse = require('react-docgen').parse
-var chokidar = require('chokidar')
-var pascalCase = require('pascal-case')
+const path = require('path')
+const paths = require('../config/paths')
+const chalk = require('chalk')
+const parse = require('react-docgen').parse
+const chokidar = require('chokidar')
+const pascalCase = require('pascal-case')
 const { getDeviconManifestFile } = require('./devicon')
-// const minifyJSON = require('node-json-minify')
-
-var paths = {
-  examples: path.join(__dirname, '../src', 'docs', 'examples'),
-  components: path.join(__dirname, '../src', 'components'),
-  output: path.join(__dirname, '../data', 'componentData.json')
-}
 
 const enableWatchMode = process.argv.slice(2) == '--watch'
 if (enableWatchMode) {
@@ -29,7 +22,7 @@ if (enableWatchMode) {
 }
 
 function generate(paths, compoonentsHomePath) {
-  var errors = []
+  let errors = []
   getComponents(paths.components).then(components => {
     const componentData = components.map(function(component) {
       try {
@@ -38,22 +31,24 @@ function generate(paths, compoonentsHomePath) {
       } catch (error) {
         errors.push(
           'An error occurred while attempting to generate metadata for ' +
-          component +
-          '. ' +
-          error
+            component +
+            '. ' +
+            error
         )
       }
     })
     const result =
       // 'module.exports = /* eslint-disable */ ' +
       JSON.stringify(errors.length ? errors : componentData)
-    return fse.writeFile(paths.output, result).catch(console.error)
+    return fse
+      .outputFile(path.resolve(paths.data, 'componentsData.json'), result)
+      .catch(console.error)
   })
 }
 
 function getComponentData(paths, component) {
-  var content = readFile(component.path)
-  var info = parse(content)
+  const content = readFile(component.path)
+  const info = parse(content)
   return {
     name: component.name,
     description: info.description,
@@ -64,11 +59,11 @@ function getComponentData(paths, component) {
 }
 
 function getExampleData(examplesPath, componentName) {
-  var examples = getExampleFiles(examplesPath, componentName)
+  const examples = getExampleFiles(examplesPath, componentName)
   return examples.map(function(file) {
-    var filePath = path.join(examplesPath, componentName, file)
-    var content = readFile(filePath)
-    var info = parse(content)
+    const filePath = path.join(examplesPath, componentName, file)
+    const content = readFile(filePath)
+    const info = parse(content)
     return {
       // By convention, component name should match the filename.
       // So remove the .js extension to get the component name.
@@ -80,7 +75,7 @@ function getExampleData(examplesPath, componentName) {
 }
 
 function getExampleFiles(examplesPath, componentName) {
-  var exampleFiles = []
+  let exampleFiles = []
   try {
     exampleFiles = getFiles(path.join(examplesPath, componentName))
   } catch (error) {
