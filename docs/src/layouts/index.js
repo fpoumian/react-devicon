@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import Split from "grommet/components/Split"
 import Box from "grommet/components/Box"
 import App from "grommet/components/App"
@@ -17,7 +16,11 @@ const TemplateWrapper = ({ children, data }) => {
       <Split fixed={true} flex={"right"}>
         <NavSidebarContainer icons={icons} />
         <Box colorIndex="light-2" pad="large" full={"vertical"}>
-          <Section>
+          <Section
+            align={"center"}
+            alignContent={"center"}
+            textAlign={"center"}
+          >
             {children()}
           </Section>
         </Box>

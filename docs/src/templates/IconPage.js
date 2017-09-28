@@ -29,7 +29,12 @@ class IconPage extends React.Component {
           {devicons.map(devicon => {
             const IconComponent = iconComponents[devicon.componentName] || null
             return IconComponent
-              ? <ListItem>
+              ? <ListItem
+                  justify={"center"}
+                  pad={{
+                    vertical: "medium"
+                  }}
+                >
                   <Devicon
                     componentName={devicon.componentName}
                     iconName={devicon.name}
