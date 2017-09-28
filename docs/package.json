@@ -4,13 +4,18 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "autoprefixer": "^7.1.4",
+    "extract-text-webpack-plugin": "1.0.1",
     "gatsby": "^1.9.42",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-source-filesystem": "^1.5.1",
     "gatsby-transformer-json": "^1.0.7",
+    "grommet": "^1.7.0",
+    "node-sass": "^4.5.3",
     "pascal-case": "^2.0.1",
-    "raw-loader": "^0.5.1"
+    "raw-loader": "^0.5.1",
+    "sass-loader": "4.1.1"
   },
   "keywords": [
     "gatsby"

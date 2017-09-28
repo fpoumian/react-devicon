@@ -1,3 +1,5 @@
+const autoprefixer = require("autoprefixer")
+
 module.exports = {
   siteMetadata: {
     title: `React Devicon`
@@ -10,6 +12,16 @@ module.exports = {
       options: {
         name: "data",
         path: `${__dirname}/src/data`
+      }
+    },
+    {
+      resolve: "custom-sass-loader",
+      options: {
+        postCssPlugins: [
+          autoprefixer({
+            browsers: ["last 2 versions"]
+          })
+        ]
       }
     }
   ]
