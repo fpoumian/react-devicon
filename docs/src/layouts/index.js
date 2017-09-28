@@ -15,9 +15,7 @@ const TemplateWrapper = ({ children, data }) => {
   return (
     <App centered={false}>
       <Split fixed={true} flex={"right"}>
-        <Box colorIndex="neutral-1" pad="none" size={"medium"}>
-          <NavSidebarContainer icons={icons} />
-        </Box>
+        <NavSidebarContainer icons={icons} />
         <Box colorIndex="light-2" pad="large" full={"vertical"}>
           <Section>
             {children()}
