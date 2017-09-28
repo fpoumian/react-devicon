@@ -6,13 +6,30 @@ class NavSidebarContainer extends Component {
     super(props)
 
     this.state = {
-      displayedMenuItems: this.props.icons
+      displayedMenuItems: this.props.icons,
+      currentSearchTerm: ""
     }
   }
 
+  handleSearchBoxChange = e => {
+    const { value } = e.target
+    this.setState({
+      currentSearchTerm: value,
+      displayedMenuItems: this.props.icons.filter(icon => {
+        return icon.includes(value)
+      })
+    })
+  }
+
   render() {
-    const { displayedMenuItems } = this.state
-    return <NavSidebar menuItems={displayedMenuItems} />
+    const { displayedMenuItems, currentSearchTerm } = this.state
+    return (
+      <NavSidebar
+        menuItems={displayedMenuItems}
+        onSearchBoxChange={this.handleSearchBoxChange}
+        currentSearchTerm={currentSearchTerm}
+      />
+    )
   }
 }
 
