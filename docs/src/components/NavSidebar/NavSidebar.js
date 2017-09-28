@@ -10,7 +10,7 @@ import Search from "grommet/components/Search"
 import SidebarLink from "../SidebarLink/SidebarLink"
 import Link from "gatsby-link"
 
-export default ({ menuItems, onSearchBoxChange, currentSearchTerm }) => {
+function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
   return (
     <Sidebar colorIndex="neutral-1" size={"medium"}>
       <Header pad="medium" justify="between">
@@ -18,7 +18,11 @@ export default ({ menuItems, onSearchBoxChange, currentSearchTerm }) => {
           <Link to={"/"}>React Devicon</Link>
         </Title>
       </Header>
-      <Box justify="start" colorIndex={"neutral-1-t"}>
+      <Box
+        justify="start"
+        colorIndex={"neutral-1-t"}
+        margin={{ vertical: "medium" }}
+      >
         <Search
           inline={true}
           placeHolder={"Search icons..."}
@@ -28,9 +32,19 @@ export default ({ menuItems, onSearchBoxChange, currentSearchTerm }) => {
       </Box>
       <Box flex="grow" justify="start">
         <Menu primary={true}>
-          {menuItems.map(link => <SidebarLink route={link} active={false} />)}
+          {menuItems.map(item =>
+            <SidebarLink route={item} key={item} active={false} />
+          )}
         </Menu>
       </Box>
     </Sidebar>
   )
 }
+
+NavSidebar.propTypes = {
+  menuItems: PropTypes.array,
+  onSearchBoxChange: PropTypes.func,
+  currentSearchTerm: PropTypes.string
+}
+
+export default NavSidebar

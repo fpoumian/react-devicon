@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import * as iconComponents from "react-devicon/index.js"
 import pascalCase from "pascal-case"
 
@@ -17,11 +18,17 @@ class IconPage extends React.Component {
         </h1>
         {componentsNames.map(componentName => {
           const IconComponent = iconComponents[componentName] || null
-          return IconComponent ? <IconComponent width={200} height={200} /> : ""
+          return IconComponent
+            ? <IconComponent key={componentName} width={200} height={200} />
+            : ""
         })}
       </div>
     )
   }
+}
+
+IconPage.propTypes = {
+  pathContext: PropTypes.object
 }
 
 export default IconPage

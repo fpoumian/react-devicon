@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 import NavSidebar from "../../components/NavSidebar/NavSidebar"
 
 class NavSidebarContainer extends Component {
@@ -31,6 +32,10 @@ class NavSidebarContainer extends Component {
       />
     )
   }
+}
+
+NavSidebarContainer.propTypes = {
+  icons: PropTypes.array
 }
 
 export default NavSidebarContainer
