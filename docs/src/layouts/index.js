@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Split from "grommet/components/Split"
+import Helmet from "react-helmet"
 import Box from "grommet/components/Box"
 import App from "grommet/components/App"
 import Section from "grommet/components/Section"
@@ -13,6 +14,9 @@ const TemplateWrapper = ({ children, data }) => {
   )
   return (
     <App centered={false}>
+      <Helmet>
+        <title>{`React Devicon | home`}</title>
+      </Helmet>
       <Split fixed={true} flex={"right"}>
         <NavSidebarContainer icons={icons} />
         <Box colorIndex="light-2" pad="large" full={"vertical"}>
@@ -26,7 +30,8 @@ const TemplateWrapper = ({ children, data }) => {
 }
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
+  data: PropTypes.object
 }
 
 export default TemplateWrapper

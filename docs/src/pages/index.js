@@ -1,9 +1,11 @@
 import React from "react"
-import Link from "gatsby-link"
 import Section from "grommet/components/Section"
 import Heading from "grommet/components/Heading"
 import Paragraph from "grommet/components/Paragraph"
 import CodeSnippet from "../components/CodeSnippet/CodeSnippet"
+import Anchor from "grommet/components/Anchor"
+import DownloadIcon from "grommet/components/icons/base/Download"
+import CodeIcon from "grommet/components/icons/base/Code"
 
 const IndexPage = () =>
   <div>
@@ -14,8 +16,8 @@ const IndexPage = () =>
         <a target={"_blank"} href={"https://github.com/konpa/devicon"}>
           Devicon
         </a>{" "}
-        package, a library of icons representing programming languages, as well
-        as design and development tools.{" "}
+        package, a library that contains the logos of several programming
+        languages, as well as of different design and development tools.{" "}
       </Paragraph>
 
       <Paragraph size={"large"}>
@@ -27,8 +29,12 @@ const IndexPage = () =>
       </Paragraph>
     </Section>
 
-    <Section>
-      <Heading tag={"h2"}>Installation</Heading>
+    <Section id={"install"}>
+      <Heading tag={"h2"}>
+        <Anchor href={"#install"} icon={<DownloadIcon />}>
+          Installation
+        </Anchor>
+      </Heading>
       <Paragraph size={"large"}>Install this package using NPM:</Paragraph>
       <CodeSnippet className={"bash"}>
         npm install 'react-devicon' --save
@@ -37,13 +43,17 @@ const IndexPage = () =>
       <CodeSnippet className={"bash"}>yarn add 'react-devicon'</CodeSnippet>
     </Section>
 
-    <Section>
-      <Heading tag={"h2"}>Usage</Heading>
+    <Section id={"usage"}>
+      <Heading tag={"h2"}>
+        <Anchor href={"#usage"} icon={<CodeIcon />}>
+          Usage
+        </Anchor>
+      </Heading>
       <Paragraph size={"large"}>
         Import each icon component from its respective module. You can find the
         paths for all the modules of every icon looking at the documentation on
-        this site. Please note that every icon has at least two or more
-        different versions.
+        this site. Please note that every icon typically has at least two or
+        more different versions.
       </Paragraph>
 
       <Paragraph size={"large"}>
@@ -63,25 +73,6 @@ const IndexPage = () =>
     )
           `}
       </CodeSnippet>
-    </Section>
-
-    <Section>
-      <Heading tag={"h2"}>Caveats</Heading>
-      <Paragraph size={"large"}>
-        This package leverages{" "}
-        <a
-          target={"_blank"}
-          href={"https://www.npmjs.com/package/react-svg-inline"}
-        >
-          react-svg-inline
-        </a>{" "}
-        behind the scenes, so, if you are using Webpack I would recommend
-        installing{" "}
-        <a target={"_blank"} href={"https://www.npmjs.com/package/raw-loader"}>
-          raw-loader
-        </a>{" "}
-        to process your SVGs.
-      </Paragraph>
     </Section>
   </div>
 

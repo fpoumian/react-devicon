@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import * as iconComponents from "react-devicon/index.js"
 import pascalCase from "pascal-case"
 import Devicon from "../components/Devicon/Devicon.js"
+import Helmet from "react-helmet"
 import List from "grommet/components/List"
 import ListItem from "grommet/components/ListItem"
 import Heading from "grommet/components/Heading"
@@ -23,6 +24,9 @@ class IconPage extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          <title>{`React Devicon | ${name}`}</title>
+        </Helmet>
         <Heading align={"center"}>
           {this.props.pathContext.name}
         </Heading>
