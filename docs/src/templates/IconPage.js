@@ -5,6 +5,7 @@ import pascalCase from "pascal-case"
 import Devicon from "../components/Devicon/Devicon.js"
 import List from "grommet/components/List"
 import ListItem from "grommet/components/ListItem"
+import Heading from "grommet/components/Heading"
 
 class IconPage extends React.Component {
   render() {
@@ -22,9 +23,9 @@ class IconPage extends React.Component {
 
     return (
       <div>
-        <h1>
+        <Heading align={"center"}>
           {this.props.pathContext.name}
-        </h1>
+        </Heading>
         <List>
           {devicons.map(devicon => {
             const IconComponent = iconComponents[devicon.componentName] || null

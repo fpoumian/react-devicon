@@ -5,7 +5,7 @@ import IconImportCode from "../IconImportCode/IconImportCode"
 
 const Devicon = ({ IconComponent, componentName, iconName, iconVersion }) => {
   return (
-    <Box>
+    <Box align={"center"}>
       <Box
         margin={{
           vertical: "medium"

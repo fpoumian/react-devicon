@@ -16,11 +16,7 @@ const TemplateWrapper = ({ children, data }) => {
       <Split fixed={true} flex={"right"}>
         <NavSidebarContainer icons={icons} />
         <Box colorIndex="light-2" pad="large" full={"vertical"}>
-          <Section
-            align={"center"}
-            alignContent={"center"}
-            textAlign={"center"}
-          >
+          <Section>
             {children()}
           </Section>
         </Box>
