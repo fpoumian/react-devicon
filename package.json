@@ -1,7 +1,7 @@
 {
   "name": "react-devicon",
   "version": "0.1.0",
-  "description": "",
+  "description": "React Devicon is a React implementation of the Devicon package, a library that contains the logos of several programming languages and libraries, as well as of different design and development tools.",
   "main": "index.js",
   "keywords": [
     "react",
@@ -42,6 +42,7 @@
     "babel-preset-react-app": "^3.0.3",
     "chokidar": "^1.6.1",
     "cross-env": "^5.0.5",
+    "judex-component-generator": "^0.1.0",
     "npm-run-all": "4.0.2",
     "nunjucks": "^3.0.1",
     "pascal-case": "^2.0.1",

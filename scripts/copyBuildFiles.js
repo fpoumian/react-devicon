@@ -6,6 +6,7 @@ const copy = require("recursive-copy")
 const files = ["README.md", "LICENSE"]
 
 const options = {
+  overwrite: true,
   filter: ["**/*.svg", "!**/*.js"]
 }
 
