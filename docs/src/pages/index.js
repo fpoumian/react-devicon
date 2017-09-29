@@ -6,6 +6,7 @@ import CodeSnippet from "../components/CodeSnippet/CodeSnippet"
 import Anchor from "grommet/components/Anchor"
 import DownloadIcon from "grommet/components/icons/base/Download"
 import CodeIcon from "grommet/components/icons/base/Code"
+import Box from "grommet/components/Box"
 
 const IndexPage = () =>
   <div>
@@ -59,8 +60,13 @@ const IndexPage = () =>
         "100px", etc) or an integer, which will be automatically converted to
         pixels.
       </Paragraph>
-      <CodeSnippet className={"javascript"}>
-        {`
+      <Box
+        margin={{
+          vertical: "medium"
+        }}
+      >
+        <CodeSnippet className={"javascript"}>
+          {`
   import IconAmazonwebservices from 'react-devicon/amazonwebservices/original'
 
   export default () => (
@@ -69,7 +75,8 @@ const IndexPage = () =>
     </div>
     )
           `}
-      </CodeSnippet>
+        </CodeSnippet>
+      </Box>
     </Section>
   </div>
 

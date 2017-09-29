@@ -1,14 +1,19 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
+import Link from "gatsby-link"
 import Sidebar from "grommet/components/Sidebar"
 import Header from "grommet/components/Header"
 import Box from "grommet/components/Box"
 import Menu from "grommet/components/Menu"
 import Title from "grommet/components/Title"
 import Search from "grommet/components/Search"
+import Anchor from "grommet/components/Anchor"
+import DownloadIcon from "grommet/components/icons/base/Download"
+import CodeIcon from "grommet/components/icons/base/Code"
+import GithubIcon from "grommet/components/icons/base/SocialGithub"
+import MenuIcon from "grommet/components/icons/base/Menu"
 
 import SidebarLink from "../SidebarLink/SidebarLink"
-import Link from "gatsby-link"
 
 function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
   return (
@@ -23,6 +28,24 @@ function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
           </Link>
         </Title>
       </Header>
+      <Box
+        flex={"grow"}
+        pad={{
+          horizontal: "medium"
+        }}
+      >
+        <Menu inline={false} icon={<MenuIcon />} label={"MENU"}>
+          <Anchor href={"/#install"} icon={<DownloadIcon />}>
+            Installation
+          </Anchor>
+          <Anchor href={"/#usage"} icon={<CodeIcon />}>
+            Usage
+          </Anchor>
+          <Anchor href={"#"} target="_blank" icon={<GithubIcon />}>
+            Github Repository
+          </Anchor>
+        </Menu>
+      </Box>
       <Box
         justify="start"
         colorIndex={"neutral-1-t"}
