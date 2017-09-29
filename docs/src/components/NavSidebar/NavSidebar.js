@@ -14,8 +14,13 @@ function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
   return (
     <Sidebar colorIndex="neutral-1" size={"medium"}>
       <Header pad="medium" justify="between">
-        <Title>
-          <Link to={"/"}>React Devicon</Link>
+        <Title truncate={false} className="devicon-logo">
+          <Link to={"/"}>
+            {`
+            React
+            Devicon
+            `}
+          </Link>
         </Title>
       </Header>
       <Box

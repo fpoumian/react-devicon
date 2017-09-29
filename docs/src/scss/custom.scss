@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Sriracha');
+
+.devicon-logo {
+  line-height: 4rem;
+  a {
+    font-family: 'Sriracha', cursive;
+    font-size: 3rem;
+    text-decoration: none !important;
+  }
+}
+
 code, kbd, pre, samp {
   font-size: 0.9em;
 }

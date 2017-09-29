@@ -22,10 +22,7 @@ const IndexPage = () =>
 
       <Paragraph size={"large"}>
         React Devicon includes all of the SVG icons of the original package
-        exported as individual React components. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        exported as individual React components.
       </Paragraph>
     </Section>
 
