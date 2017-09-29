@@ -1,7 +1,7 @@
-const { getDeviconManifestFile } = require('./devicon.js')
-const paths = require('../config/paths')
-const fse = require('fs-extra')
-const path = require('path')
+const { getDeviconManifestFile } = require("./devicon.js")
+const paths = require("../config/paths")
+const fse = require("fs-extra")
+const path = require("path")
 
 getDeviconManifestFile()
   .then(filePath => {

@@ -61,3 +61,6 @@ typings/
 
 # IDE
 .idea
+
+# Babel transpiled package
+/lib
