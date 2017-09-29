@@ -1,13 +1,14 @@
-import React from "react"
-import PropTypes from "prop-types"
-import SVGInline from "react-svg-inline"
-import iconSVG from "./VimPlain.svg"
-import { normalizeUnit } from "../../utils.js"
+
+import React from 'react'
+import PropTypes from 'prop-types'
+import SVGInline from 'react-svg-inline'
+import iconSVG from './VimPlain.svg'
+import { normalizeUnit } from '../../utils.js'
 
 /** VimPlain */
-function VimPlain({ width, height }) {
+function VimPlain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="VimPlain"
       svg={iconSVG}

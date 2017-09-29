@@ -37,21 +37,13 @@ function generateIconComponent(iconName, iconVersion) {
       .on("done", componentPaths => {
         fs
           .readFile(svgFilePath, "utf8")
-          // .then(svg => optimizeSVG(svg))
-          .then(data => {
+          .then(svg => optimizeSVG(svg))
+          .then(results => {
             return fs.writeFile(
               path.resolve(componentPaths.root, `${componentName}.svg`),
-              data
+              results.data
             )
           })
-          .then(() =>
-            generateComponentExamples(
-              componentName,
-              iconName,
-              iconVersion,
-              paths.examples
-            )
-          )
           .then(() => {
             return writeExportToStream(
               indexFileWriteStream,
@@ -77,30 +69,6 @@ function writeExportToStream(
 ) {
   const templateString = `export ${componentName} from './${iconName}/${iconVersion}'\n`
   writeStream.write(templateString)
-}
-function generateComponentExamples(
-  componentName,
-  iconName,
-  iconVersion,
-  examplesHomePath
-) {
-  const context = {
-    defaultFunctionIdentifier: `${componentName}Example`,
-    defaultImportIdentifier: pascalCase(iconName) + "Icon",
-    width: "100px",
-    height: "100px",
-    iconVersion,
-    iconName
-  }
-
-  const templateString = require("./templates/icon-component-example")
-  const template = nunjucks.compile(templateString)
-  const data = template.render(Object.assign({}, context))
-
-  return fs.outputFile(
-    path.resolve(examplesHomePath, componentName, `${componentName}.js`),
-    data
-  )
 }
 
 function generateComponents(iconsArray) {

@@ -5,6 +5,8 @@ import Helmet from "react-helmet"
 import Box from "grommet/components/Box"
 import App from "grommet/components/App"
 import Section from "grommet/components/Section"
+import Footer from "grommet/components/Footer"
+import Paragraph from "grommet/components/Paragraph"
 import NavSidebarContainer from "../containers/NavSidebarContainer/NavSidebarContainer"
 import "../scss/main.scss"
 
@@ -23,6 +25,20 @@ const TemplateWrapper = ({ children, data }) => {
           <Section>
             {children()}
           </Section>
+          <Footer
+            justify={"center"}
+            size={"large"}
+            margin={{
+              vertical: "large"
+            }}
+          >
+            <Box direction="column" align={"center"}>
+              <Paragraph margin="none">{`© 2017 Fernando Poumián`}</Paragraph>
+              <Paragraph margin="medium" align={"center"}>
+                {`All product names, logos, and brandsare property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.`}
+              </Paragraph>
+            </Box>
+          </Footer>
         </Box>
       </Split>
     </App>

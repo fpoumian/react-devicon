@@ -7,6 +7,7 @@ import Anchor from "grommet/components/Anchor"
 import DownloadIcon from "grommet/components/icons/base/Download"
 import CodeIcon from "grommet/components/icons/base/Code"
 import Box from "grommet/components/Box"
+import UserIcon from "grommet/components/icons/base/User"
 
 const IndexPage = () =>
   <div>
@@ -23,7 +24,12 @@ const IndexPage = () =>
 
       <Paragraph size={"large"}>
         React Devicon includes all of the SVG icons of the original package
-        exported as individual React components.
+        exported as individual React components. In addition, each SVG file has
+        been optimized using{" "}
+        <a target={"_blank"} href={"https://github.com/svg/svgo"}>
+          SVGO
+        </a>{" "}
+        to ensure the smallest component size possible.
       </Paragraph>
     </Section>
 
@@ -77,6 +83,32 @@ const IndexPage = () =>
           `}
         </CodeSnippet>
       </Box>
+    </Section>
+
+    <Section id={"credits"}>
+      <Heading tag={"h2"}>
+        <Anchor href={"#credits"} icon={<UserIcon />}>
+          Credits
+        </Anchor>
+      </Heading>
+      <Paragraph size={"large"}>
+        All of the SVG files were taken directly from the{" "}
+        <a target={"_blank"} href={"https://github.com/konpa/devicon"}>
+          Devicon
+        </a>{" "}
+        library created by{" "}
+        <a target={"_blank"} href={"https://github.com/konpa"}>
+          konpa
+        </a>.
+      </Paragraph>
+
+      <Paragraph size={"large"}>
+        React Devicon is a project created by{" "}
+        <a target={"_blank"} href={"https://github.com/fpoumian"}>
+          Fernando Poumián
+        </a>{" "}
+        and released under the MIT license.
+      </Paragraph>
     </Section>
   </div>
 
