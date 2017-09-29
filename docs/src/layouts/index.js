@@ -33,9 +33,17 @@ const TemplateWrapper = ({ children, data }) => {
             }}
           >
             <Box direction="column" align={"center"}>
-              <Paragraph margin="none">{`© 2017 Fernando Poumián`}</Paragraph>
               <Paragraph margin="medium" align={"center"}>
                 {`All product names, logos, and brandsare property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.`}
+              </Paragraph>
+              {/*<Paragraph margin="none">{`© 2017 `}</Paragraph>*/}
+              <Paragraph margin="medium" align={"center"}>
+                {`Site generated using `}
+                <a href={"https://www.gatsbyjs.org/"} target={"_blank"}>
+                  GatsbyJS
+                </a>
+                <br />
+                {`Copyright © 2017 Fernando Poumián`}
               </Paragraph>
             </Box>
           </Footer>

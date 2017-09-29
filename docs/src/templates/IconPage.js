@@ -12,10 +12,6 @@ class IconPage extends React.Component {
   render() {
     const { name, versions } = this.props.pathContext
 
-    const componentsNames = versions.map(
-      version => `${pascalCase(name)}${pascalCase(version)}`
-    )
-
     const devicons = versions.map(version => ({
       componentName: `${pascalCase(name)}${pascalCase(version)}`,
       name,
