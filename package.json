@@ -12,41 +12,49 @@
     "components"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node scripts/test.js --env=jsdom",
+    "src:generateComponents": "node scripts/generateComponents.js",
     "docs:copy-devicon-files": "node scripts/copyDeviconFiles.js",
     "prebuild:lib": "rimraf lib",
     "build:lib": "npm-run-all --parallel build:commonjs build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
-    "prepublish": "npm run build:lib"
+    "_prepublish": "npm run build:lib"
   },
   "author": "Fernando Poumián",
   "license": "MIT",
   "dependencies": {
+    "escape-quotes": "^1.0.2",
+    "react": "15.5.4",
     "react-svg-inline": "^2.0.0"
   },
   "peerDependencies": {
+    "prop-types": "^15.0.0",
     "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0",
-    "prop-types": "^15.0.0"
+    "react-dom": "^0.14.0 || ^15.0.0"
   },
   "devDependencies": {
-    "chalk": "^2.1.0",
-    "devicon-2.2": "^2.2.0",
-    "fs-extra": "^4.0.2",
-    "lodash.isnumber": "^3.0.3",
-    "svgo": "^0.7.2",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
     "babel-plugin-transform-export-default": "^7.0.0-alpha.20",
     "babel-preset-react-app": "^3.0.3",
+    "chalk": "^2.1.0",
     "chokidar": "^1.6.1",
     "cross-env": "^5.0.5",
+    "devicon-2.2": "^2.2.0",
+    "enzyme": "^2.8.2",
+    "fs-extra": "^4.0.2",
+    "jest": "^21.2.1",
+    "lodash.isnumber": "^3.0.3",
     "npm-run-all": "4.0.2",
     "nunjucks": "^3.0.1",
     "pascal-case": "^2.0.1",
+    "react-addons-test-utils": "15.5.1",
     "react-docgen": "2.14.0",
-    "recursive-copy": "^2.0.6"
+    "react-dom": "15.5.4",
+    "recursive-copy": "^2.0.6",
+    "svgo": "^0.7.2"
   },
   "babel": {
     "plugins": [
@@ -60,6 +68,25 @@
         }
       ],
       "react-app"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)",
+      "<rootDir>/scripts/**/__tests__/**/*.js"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(svg)$": "<rootDir>/config/jest/svgTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
     ]
   }
 }

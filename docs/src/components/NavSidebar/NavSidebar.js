@@ -18,7 +18,7 @@ import SidebarLink from "../SidebarLink/SidebarLink"
 function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
   return (
     <Sidebar colorIndex="neutral-1" size={"medium"}>
-      <Header pad="medium" justify="between">
+      <Header pad="medium" justify="between" flex={false}>
         <Title truncate={false} className="devicon-logo">
           <Link to={"/"}>
             {`
@@ -29,7 +29,7 @@ function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
         </Title>
       </Header>
       <Box
-        flex={"grow"}
+        flex={false}
         pad={{
           horizontal: "medium"
         }}
