@@ -1,2 +1,1 @@
-export { default } from "./PhpstormPlain";
-
+export { default } from './PhpstormPlain'

@@ -1,2 +1,1 @@
-export { default } from "./MoodleOriginalWordmark";
-
+export { default } from './MoodleOriginalWordmark'

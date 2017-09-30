@@ -1,2 +1,1 @@
-export { default } from "./RedisOriginal";
-
+export { default } from './RedisOriginal'

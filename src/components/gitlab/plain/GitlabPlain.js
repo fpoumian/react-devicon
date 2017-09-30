@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './GitlabPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** GitlabPlain */
-function GitlabPlain({width, height}) {
+function GitlabPlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="GitlabPlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function GitlabPlain({width, height}) {
 
 GitlabPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default GitlabPlain

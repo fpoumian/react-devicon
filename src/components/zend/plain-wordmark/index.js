@@ -1,2 +1,1 @@
-export { default } from "./ZendPlainWordmark";
-
+export { default } from './ZendPlainWordmark'

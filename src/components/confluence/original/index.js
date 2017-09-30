@@ -1,2 +1,1 @@
-export { default } from "./ConfluenceOriginal";
-
+export { default } from './ConfluenceOriginal'

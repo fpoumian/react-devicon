@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './UbuntuPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** UbuntuPlain */
-function UbuntuPlain({width, height}) {
+function UbuntuPlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="UbuntuPlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function UbuntuPlain({width, height}) {
 
 UbuntuPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default UbuntuPlain

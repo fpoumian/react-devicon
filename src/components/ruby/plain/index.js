@@ -1,2 +1,1 @@
-export { default } from "./RubyPlain";
-
+export { default } from './RubyPlain'

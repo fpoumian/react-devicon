@@ -1,2 +1,1 @@
-export { default } from "./RailsOriginalWordmark";
-
+export { default } from './RailsOriginalWordmark'

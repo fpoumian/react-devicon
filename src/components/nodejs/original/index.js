@@ -1,2 +1,1 @@
-export { default } from "./NodejsOriginal";
-
+export { default } from './NodejsOriginal'

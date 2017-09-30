@@ -1,2 +1,1 @@
-export { default } from "./MysqlOriginalWordmark";
-
+export { default } from './MysqlOriginalWordmark'

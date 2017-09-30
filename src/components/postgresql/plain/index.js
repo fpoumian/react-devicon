@@ -1,2 +1,1 @@
-export { default } from "./PostgresqlPlain";
-
+export { default } from './PostgresqlPlain'

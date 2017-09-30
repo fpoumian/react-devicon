@@ -1,2 +1,1 @@
-export { default } from "./CsharpOriginal";
-
+export { default } from './CsharpOriginal'

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './GulpPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** GulpPlain */
-function GulpPlain({width, height}) {
+function GulpPlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="GulpPlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function GulpPlain({width, height}) {
 
 GulpPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default GulpPlain

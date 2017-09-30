@@ -1,2 +1,1 @@
-export { default } from "./AngularjsPlain";
-
+export { default } from './AngularjsPlain'

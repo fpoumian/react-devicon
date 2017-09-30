@@ -1,2 +1,1 @@
-export { default } from "./WordpressPlain";
-
+export { default } from './WordpressPlain'

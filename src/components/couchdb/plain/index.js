@@ -1,2 +1,1 @@
-export { default } from "./CouchdbPlain";
-
+export { default } from './CouchdbPlain'

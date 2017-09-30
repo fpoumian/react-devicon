@@ -1,2 +1,1 @@
-export { default } from "./SwiftPlainWordmark";
-
+export { default } from './SwiftPlainWordmark'

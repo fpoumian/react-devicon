@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './TypescriptPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** TypescriptPlain */
-function TypescriptPlain({width, height}) {
+function TypescriptPlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="TypescriptPlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function TypescriptPlain({width, height}) {
 
 TypescriptPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default TypescriptPlain

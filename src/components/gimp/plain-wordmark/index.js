@@ -1,2 +1,1 @@
-export { default } from "./GimpPlainWordmark";
-
+export { default } from './GimpPlainWordmark'

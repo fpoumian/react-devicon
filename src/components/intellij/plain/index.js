@@ -1,2 +1,1 @@
-export { default } from "./IntellijPlain";
-
+export { default } from './IntellijPlain'

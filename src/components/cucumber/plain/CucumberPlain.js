@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './CucumberPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** CucumberPlain */
-function CucumberPlain({width, height}) {
+function CucumberPlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="CucumberPlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function CucumberPlain({width, height}) {
 
 CucumberPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default CucumberPlain

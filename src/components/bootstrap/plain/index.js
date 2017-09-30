@@ -1,2 +1,1 @@
-export { default } from "./BootstrapPlain";
-
+export { default } from './BootstrapPlain'

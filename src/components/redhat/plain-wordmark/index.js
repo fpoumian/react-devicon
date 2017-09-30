@@ -1,2 +1,1 @@
-export { default } from "./RedhatPlainWordmark";
-
+export { default } from './RedhatPlainWordmark'

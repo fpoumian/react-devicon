@@ -1,2 +1,1 @@
-export { default } from "./EmberOriginalWordmark";
-
+export { default } from './EmberOriginalWordmark'

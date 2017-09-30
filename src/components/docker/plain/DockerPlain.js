@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './DockerPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** DockerPlain */
-function DockerPlain({width, height}) {
+function DockerPlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="DockerPlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function DockerPlain({width, height}) {
 
 DockerPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default DockerPlain

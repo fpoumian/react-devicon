@@ -1,2 +1,1 @@
-export { default } from "./PycharmPlain";
-
+export { default } from './PycharmPlain'

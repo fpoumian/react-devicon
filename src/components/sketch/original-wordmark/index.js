@@ -1,2 +1,1 @@
-export { default } from "./SketchOriginalWordmark";
-
+export { default } from './SketchOriginalWordmark'

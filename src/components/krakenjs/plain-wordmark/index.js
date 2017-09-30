@@ -1,2 +1,1 @@
-export { default } from "./KrakenjsPlainWordmark";
-
+export { default } from './KrakenjsPlainWordmark'

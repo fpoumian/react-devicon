@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './SshOriginal.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** SshOriginal */
-function SshOriginal({width, height}) {
+function SshOriginal({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="SshOriginal"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function SshOriginal({width, height}) {
 
 SshOriginal.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default SshOriginal

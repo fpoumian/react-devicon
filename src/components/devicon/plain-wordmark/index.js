@@ -1,2 +1,1 @@
-export { default } from "./DeviconPlainWordmark";
-
+export { default } from './DeviconPlainWordmark'

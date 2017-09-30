@@ -1,2 +1,1 @@
-export { default } from "./ChromeOriginalWordmark";
-
+export { default } from './ChromeOriginalWordmark'

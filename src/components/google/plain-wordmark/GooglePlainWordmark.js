@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './GooglePlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** GooglePlainWordmark */
-function GooglePlainWordmark({width, height}) {
+function GooglePlainWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="GooglePlainWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function GooglePlainWordmark({width, height}) {
 
 GooglePlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default GooglePlainWordmark

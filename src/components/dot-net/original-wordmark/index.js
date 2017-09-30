@@ -1,2 +1,1 @@
-export { default } from "./DotNetOriginalWordmark";
-
+export { default } from './DotNetOriginalWordmark'

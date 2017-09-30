@@ -1,2 +1,1 @@
-export { default } from "./NginxOriginal";
-
+export { default } from './NginxOriginal'

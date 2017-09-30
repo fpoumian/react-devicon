@@ -1,2 +1,1 @@
-export { default } from "./Html5PlainWordmark";
-
+export { default } from './Html5PlainWordmark'

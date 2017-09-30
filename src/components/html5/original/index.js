@@ -1,2 +1,1 @@
-export { default } from "./Html5Original";
-
+export { default } from './Html5Original'

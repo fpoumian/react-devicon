@@ -1,2 +1,1 @@
-export { default } from "./GitlabPlainWordmark";
-
+export { default } from './GitlabPlainWordmark'

@@ -1,2 +1,1 @@
-export { default } from "./TypescriptPlain";
-
+export { default } from './TypescriptPlain'

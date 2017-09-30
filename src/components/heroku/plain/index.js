@@ -1,2 +1,1 @@
-export { default } from "./HerokuPlain";
-
+export { default } from './HerokuPlain'

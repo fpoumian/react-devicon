@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './KrakenjsOriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** KrakenjsOriginalWordmark */
-function KrakenjsOriginalWordmark({width, height}) {
+function KrakenjsOriginalWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="KrakenjsOriginalWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function KrakenjsOriginalWordmark({width, height}) {
 
 KrakenjsOriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default KrakenjsOriginalWordmark

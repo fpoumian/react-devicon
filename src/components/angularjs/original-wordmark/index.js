@@ -1,2 +1,1 @@
-export { default } from "./AngularjsOriginalWordmark";
-
+export { default } from './AngularjsOriginalWordmark'

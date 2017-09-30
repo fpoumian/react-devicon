@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './ElmOriginal.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** ElmOriginal */
-function ElmOriginal({width, height}) {
+function ElmOriginal({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="ElmOriginal"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function ElmOriginal({width, height}) {
 
 ElmOriginal.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default ElmOriginal

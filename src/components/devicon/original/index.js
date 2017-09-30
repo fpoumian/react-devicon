@@ -1,2 +1,1 @@
-export { default } from "./DeviconOriginal";
-
+export { default } from './DeviconOriginal'

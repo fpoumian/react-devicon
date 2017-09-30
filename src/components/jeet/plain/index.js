@@ -1,2 +1,1 @@
-export { default } from "./JeetPlain";
-
+export { default } from './JeetPlain'

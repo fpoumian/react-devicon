@@ -1,44 +1,43 @@
-const fs = require("fs-extra")
-const path = require("path")
-const paths = require("../config/paths")
-const nunjucks = require("nunjucks")
-const judex = require("judex-component-generator")
-const pascalCase = require("pascal-case")
-const { getDeviconPath, getDeviconManifestFile } = require("./devicon")
-const SVGO = require("svgo")
+const fs = require('fs-extra')
+const path = require('path')
+const paths = require('../config/paths')
+const judex = require('judex-component-generator')
+const pascalCase = require('pascal-case')
+const { getDeviconPath, getDeviconManifestFile } = require('./devicon')
+const SVGO = require('svgo')
 
 // global
 let deviconPath
 let indexFileWriteStream
 const svgo = new SVGO()
-const componentsIndex = path.resolve(paths.components, "index.js")
+const componentsIndex = path.resolve(paths.components, 'index.js')
 
 // Create a Judex generator
 const generator = judex({
   paths: {
     components: paths.components,
-    templates: path.resolve(__dirname, "templates")
+    templates: path.resolve(__dirname, 'templates'),
   },
   rules: {
-    "component-name-root-dir": false
+    'component-name-root-dir': false,
   },
-  plugins: ["tests-file"]
+  plugins: ['tests-file'],
 })
 
 function generateIconComponent(iconName, iconVersion) {
   const componentName = `${pascalCase(iconName)}${pascalCase(iconVersion)}`
   const svgFileName = `${iconName}-${iconVersion}.svg`
-  const svgFilePath = path.resolve(deviconPath, "icons", iconName, svgFileName)
+  const svgFilePath = path.resolve(deviconPath, 'icons', iconName, svgFileName)
 
   return new Promise((resolve, reject) => {
     generator
       .generate(`${iconName}/${iconVersion}/${componentName}`, {
         index: true,
-        tests: true
+        tests: true,
       })
-      .on("done", componentPaths => {
+      .on('done', componentPaths => {
         fs
-          .readFile(svgFilePath, "utf8")
+          .readFile(svgFilePath, 'utf8')
           .then(svg => optimizeSVG(svg))
           .then(results => {
             return fs.writeFile(
@@ -57,7 +56,7 @@ function generateIconComponent(iconName, iconVersion) {
           .then(() => fs.readdir(componentPaths.root))
           .then(dirContents => resolve(dirContents))
       })
-      .on("error", error => {
+      .on('error', error => {
         reject(error)
       })
   })
@@ -106,10 +105,10 @@ try {
 }
 
 fs
-  .outputFile(componentsIndex, "")
+  .outputFile(componentsIndex, '')
   .then(() => {
     return (indexFileWriteStream = fs.createWriteStream(componentsIndex, {
-      flags: "a"
+      flags: 'a',
     }))
   })
   .then(() => getDeviconManifestFile())

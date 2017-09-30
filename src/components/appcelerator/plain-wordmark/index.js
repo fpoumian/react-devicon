@@ -1,2 +1,1 @@
-export { default } from "./AppceleratorPlainWordmark";
-
+export { default } from './AppceleratorPlainWordmark'

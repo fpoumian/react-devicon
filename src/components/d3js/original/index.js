@@ -1,2 +1,1 @@
-export { default } from "./D3jsOriginal";
-
+export { default } from './D3jsOriginal'

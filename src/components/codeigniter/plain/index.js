@@ -1,2 +1,1 @@
-export { default } from "./CodeigniterPlain";
-
+export { default } from './CodeigniterPlain'

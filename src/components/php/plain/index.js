@@ -1,2 +1,1 @@
-export { default } from "./PhpPlain";
-
+export { default } from './PhpPlain'

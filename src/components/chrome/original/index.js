@@ -1,2 +1,1 @@
-export { default } from "./ChromeOriginal";
-
+export { default } from './ChromeOriginal'

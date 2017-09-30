@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './DoctrineLine.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** DoctrineLine */
-function DoctrineLine({width, height}) {
+function DoctrineLine({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="DoctrineLine"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function DoctrineLine({width, height}) {
 
 DoctrineLine.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default DoctrineLine

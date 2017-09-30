@@ -1,2 +1,1 @@
-export { default } from "./SymfonyOriginalWordmark";
-
+export { default } from './SymfonyOriginalWordmark'

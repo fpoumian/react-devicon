@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './SafariOriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** SafariOriginalWordmark */
-function SafariOriginalWordmark({width, height}) {
+function SafariOriginalWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="SafariOriginalWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function SafariOriginalWordmark({width, height}) {
 
 SafariOriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default SafariOriginalWordmark

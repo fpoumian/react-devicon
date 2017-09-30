@@ -1,2 +1,1 @@
-export { default } from "./VagrantOriginal";
-
+export { default } from './VagrantOriginal'

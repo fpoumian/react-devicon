@@ -1,2 +1,1 @@
-export { default } from "./InkscapePlainWordmark";
-
+export { default } from './InkscapePlainWordmark'

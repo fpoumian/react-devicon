@@ -1,2 +1,1 @@
-export { default } from "./AndroidOriginalWordmark";
-
+export { default } from './AndroidOriginalWordmark'

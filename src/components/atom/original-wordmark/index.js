@@ -1,2 +1,1 @@
-export { default } from "./AtomOriginalWordmark";
-
+export { default } from './AtomOriginalWordmark'

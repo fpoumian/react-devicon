@@ -1,2 +1,1 @@
-export { default } from "./COriginal";
-
+export { default } from './COriginal'

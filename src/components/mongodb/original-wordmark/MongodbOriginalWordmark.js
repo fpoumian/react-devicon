@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './MongodbOriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** MongodbOriginalWordmark */
-function MongodbOriginalWordmark({width, height}) {
+function MongodbOriginalWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="MongodbOriginalWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function MongodbOriginalWordmark({width, height}) {
 
 MongodbOriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default MongodbOriginalWordmark

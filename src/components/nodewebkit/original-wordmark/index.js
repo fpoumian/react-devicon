@@ -1,2 +1,1 @@
-export { default } from "./NodewebkitOriginalWordmark";
-
+export { default } from './NodewebkitOriginalWordmark'

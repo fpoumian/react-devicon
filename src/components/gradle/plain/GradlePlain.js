@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './GradlePlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** GradlePlain */
-function GradlePlain({width, height}) {
+function GradlePlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="GradlePlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function GradlePlain({width, height}) {
 
 GradlePlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default GradlePlain

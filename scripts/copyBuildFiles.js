@@ -1,13 +1,13 @@
-const path = require("path")
-const paths = require("../config/paths")
-const fse = require("fs-extra")
-const copy = require("recursive-copy")
+const path = require('path')
+const paths = require('../config/paths')
+const fse = require('fs-extra')
+const copy = require('recursive-copy')
 
-const files = ["README.md", "LICENSE"]
+const files = ['README.md', 'LICENSE']
 
 const options = {
   overwrite: true,
-  filter: ["**/*.svg", "!**/*.js"]
+  filter: ['**/*.svg', '!**/*.js'],
 }
 
 copy(paths.components, paths.appBuild, options)
@@ -29,14 +29,14 @@ function copyFile(file) {
 }
 
 function resolveBuildPath(file) {
-  return path.resolve(__dirname, "../lib/", path.basename(file))
+  return path.resolve(__dirname, '../lib/', path.basename(file))
 }
 
 function createPackageFile() {
   return new Promise(resolve => {
     fse.readFile(
-      path.resolve(__dirname, "../package.json"),
-      "utf8",
+      path.resolve(__dirname, '../package.json'),
+      'utf8',
       (err, data) => {
         if (err) {
           throw err
@@ -59,7 +59,7 @@ function createPackageFile() {
         bugs,
         homepage,
         peerDependencies,
-        dependencies
+        dependencies,
       } = packageData
 
       const minimalPackage = {
@@ -67,18 +67,18 @@ function createPackageFile() {
         author,
         version,
         description,
-        main: "./index.js",
+        main: './index.js',
         keywords,
         repository,
         license,
         bugs,
         homepage,
         peerDependencies,
-        dependencies
+        dependencies,
       }
 
       return new Promise(resolve => {
-        const libPath = path.resolve(__dirname, "../lib/package.json")
+        const libPath = path.resolve(__dirname, '../lib/package.json')
         const data = JSON.stringify(minimalPackage, null, 2)
         fse.writeFile(libPath, data, err => {
           if (err) throw err

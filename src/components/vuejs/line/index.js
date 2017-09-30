@@ -1,2 +1,1 @@
-export { default } from "./VuejsLine";
-
+export { default } from './VuejsLine'

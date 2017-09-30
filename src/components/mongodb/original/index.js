@@ -1,2 +1,1 @@
-export { default } from "./MongodbOriginal";
-
+export { default } from './MongodbOriginal'

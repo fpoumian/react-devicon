@@ -1,2 +1,1 @@
-export { default } from "./NodewebkitPlain";
-
+export { default } from './NodewebkitPlain'

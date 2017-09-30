@@ -1,2 +1,1 @@
-export { default } from "./VuejsOriginal";
-
+export { default } from './VuejsOriginal'

@@ -1,2 +1,1 @@
-export { default } from "./GooglePlainWordmark";
-
+export { default } from './GooglePlainWordmark'
