@@ -14,12 +14,12 @@
   "scripts": {
     "test": "node scripts/test.js --env=jsdom",
     "test:sample": "npm run test -- src/components/android/*",
-    "src:generateComponents": "node scripts/generateComponents.js",
+    "generate:components": "node scripts/generateComponents.js",
     "docs:copy-devicon-files": "node scripts/copyDeviconFiles.js",
     "prebuild:lib": "rimraf lib",
     "build:lib": "npm-run-all --parallel build:commonjs build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
-    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore __tests__/*.js",
     "_prepublish": "npm run build:lib"
   },
   "author": "Fernando Poumián",
