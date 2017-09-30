@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "test": "node scripts/test.js --env=jsdom",
+    "test:sample": "npm run test -- src/components/android/*",
     "src:generateComponents": "node scripts/generateComponents.js",
     "docs:copy-devicon-files": "node scripts/copyDeviconFiles.js",
     "prebuild:lib": "rimraf lib",
@@ -24,8 +25,6 @@
   "author": "Fernando Poumián",
   "license": "MIT",
   "dependencies": {
-    "escape-quotes": "^1.0.2",
-    "react": "15.5.4",
     "react-svg-inline": "^2.0.0"
   },
   "peerDependencies": {
@@ -44,15 +43,18 @@
     "cross-env": "^5.0.5",
     "devicon-2.2": "^2.2.0",
     "enzyme": "^2.8.2",
+    "escape-quotes": "^1.0.2",
     "fs-extra": "^4.0.2",
     "jest": "^21.2.1",
     "lodash.isnumber": "^3.0.3",
     "npm-run-all": "4.0.2",
     "nunjucks": "^3.0.1",
     "pascal-case": "^2.0.1",
-    "react-addons-test-utils": "15.5.1",
+    "react": "15.5.4",
+    "react-addons-test-utils": "^15.6.2",
     "react-docgen": "2.14.0",
     "react-dom": "15.5.4",
+    "react-test-renderer": "^16.0.0",
     "recursive-copy": "^2.0.6",
     "svgo": "^0.7.2"
   },
