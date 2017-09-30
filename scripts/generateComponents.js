@@ -21,7 +21,8 @@ const generator = judex({
   },
   rules: {
     "component-name-root-dir": false
-  }
+  },
+  plugins: ["tests-file"]
 })
 
 function generateIconComponent(iconName, iconVersion) {
@@ -32,7 +33,8 @@ function generateIconComponent(iconName, iconVersion) {
   return new Promise((resolve, reject) => {
     generator
       .generate(`${iconName}/${iconVersion}/${componentName}`, {
-        index: true
+        index: true,
+        tests: true
       })
       .on("done", componentPaths => {
         fs
