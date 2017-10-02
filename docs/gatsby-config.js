@@ -1,28 +1,28 @@
-const autoprefixer = require("autoprefixer")
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
   siteMetadata: {
-    title: `React Devicon`
+    title: `React Devicon`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    "gatsby-transformer-json",
+    'gatsby-transformer-json',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "data",
-        path: `${__dirname}/src/data`
-      }
+        name: 'data',
+        path: `${__dirname}/src/data`,
+      },
     },
     {
-      resolve: "custom-sass-loader",
+      resolve: 'custom-sass-loader',
       options: {
         postCssPlugins: [
           autoprefixer({
-            browsers: ["last 2 versions"]
-          })
-        ]
-      }
-    }
-  ]
+            browsers: ['last 2 versions'],
+          }),
+        ],
+      },
+    },
+  ],
 }

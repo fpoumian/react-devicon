@@ -16,10 +16,13 @@
     "es6": true,
     "node": true
   },
+  "globals": {
+    "graphql": true
+  },
   "rules": {
     "prettier/prettier": ["error", {"singleQuote": true, "semi":false, "trailingComma": "es5"}],
     "react/jsx-uses-vars": [2],
-    "no-unused-vars": ["error", { "varsIgnorePattern": "React" }]
+    "no-unused-vars": ["error", { "varsIgnorePattern": "React"}]
   },
   "plugins": ["react", "prettier"],
   "parser": "babel-eslint"

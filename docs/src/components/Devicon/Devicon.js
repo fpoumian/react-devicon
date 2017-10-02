@@ -1,14 +1,14 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Box from "grommet/components/Box"
-import IconImportCode from "../IconImportCode/IconImportCode"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Box from 'grommet/components/Box'
+import IconImportCode from '../IconImportCode/IconImportCode'
 
 const Devicon = ({ IconComponent, componentName, iconName, iconVersion }) => {
   return (
-    <Box align={"center"}>
+    <Box align={'center'}>
       <Box
         margin={{
-          vertical: "medium"
+          vertical: 'medium',
         }}
       >
         <IconComponent key={componentName} width={200} height={200} />
@@ -20,6 +20,11 @@ const Devicon = ({ IconComponent, componentName, iconName, iconVersion }) => {
   )
 }
 
-Devicon.propTypes = {}
+Devicon.propTypes = {
+  iconComponent: PropTypes.element,
+  componentName: PropTypes.string,
+  iconName: PropTypes.string,
+  iconVersion: PropTypes.string,
+}
 
 export default Devicon

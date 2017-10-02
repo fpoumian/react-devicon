@@ -1,17 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Highlight from "react-highlight"
-import "highlight.js/styles/dracula.css"
+import Highlight from 'react-highlight'
+import 'highlight.js/styles/dracula.css'
 
-const CodeSnippet = ({children, className}) => {
-  return (
-    <Highlight className={className}>
-      { children }
-    </Highlight>
-  )
+const CodeSnippet = ({ children, className }) => {
+  return <Highlight className={className}> {children} </Highlight>
 }
 
-CodeSnippet.propTypes = {}
-CodeSnippet.defaultProps = {}
+CodeSnippet.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+}
 
 export default CodeSnippet

@@ -1,16 +1,16 @@
-const path = require("path")
+const path = require('path')
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config.merge({
     resolve: {
       alias: {
-        "react-devicon": path.resolve(__dirname, "../src/components")
-      }
-    }
+        'react-devicon': path.resolve(__dirname, '../src/components'),
+      },
+    },
   })
 
   if (
-    ["develop", "develop-html", "build-html", "build-javascript"].includes(
+    ['develop', 'develop-html', 'build-html', 'build-javascript'].includes(
       stage
     )
   ) {
@@ -20,12 +20,12 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
       loader: `url`,
       query: {
         limit: 10000,
-        name: `static/[name].[hash:8].[ext]`
-      }
+        name: `static/[name].[hash:8].[ext]`,
+      },
     })
-    config.loader("raw-loader", {
+    config.loader('raw-loader', {
       test: /\.svg$/,
-      loader: "raw-loader"
+      loader: 'raw-loader',
     })
   }
   return config
@@ -42,23 +42,21 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     resolve(
       graphql(
         `
-     {
-  allFile {
-    edges {
-      node {
-        childrenDeviconJson {
-          name
-          versions {
-            svg
+          {
+            allFile {
+              edges {
+                node {
+                  childrenDeviconJson {
+                    name
+                    versions {
+                      svg
+                    }
+                  }
+                }
+              }
+            }
           }
-        }
-      }
-    }
-  }
-}
-
-
-    `
+        `
       ).then(result => {
         if (result.errors) {
           reject(result.errors)
@@ -72,8 +70,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               component: iconPageTemplate,
               context: {
                 name,
-                versions: versions.svg
-              }
+                versions: versions.svg,
+              },
             })
           })
         })

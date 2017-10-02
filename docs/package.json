@@ -27,7 +27,6 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production gatsby build",
     "develop": "cross-env NODE_ENV=development gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

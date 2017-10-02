@@ -1,6 +1,6 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-import NavSidebar from "../../components/NavSidebar/NavSidebar"
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import NavSidebar from '../../components/NavSidebar/NavSidebar'
 
 class NavSidebarContainer extends Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class NavSidebarContainer extends Component {
 
     this.state = {
       displayedMenuItems: this.props.icons,
-      currentSearchTerm: ""
+      currentSearchTerm: '',
     }
   }
 
@@ -18,7 +18,7 @@ class NavSidebarContainer extends Component {
       currentSearchTerm: value,
       displayedMenuItems: this.props.icons.filter(icon => {
         return icon.includes(value)
-      })
+      }),
     })
   }
 
@@ -35,7 +35,7 @@ class NavSidebarContainer extends Component {
 }
 
 NavSidebarContainer.propTypes = {
-  icons: PropTypes.array
+  icons: PropTypes.array,
 }
 
 export default NavSidebarContainer

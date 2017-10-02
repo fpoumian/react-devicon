@@ -20,7 +20,7 @@
     "build:lib": "npm-run-all --parallel build:commonjs build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore __tests__/*.js",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'config/**/*.js' 'scripts/**/*.js'",
+    "format-all": "prettier --trailing-comma es5 --no-semi --single-quote --write './src/**/*.js' './scripts/**/*.js' './config/**/*.js' './docs/**/*.js' '!./docs/.cache/**/*.js' '!./docs/node_modules/**/*.js' '!./docs/public/**/*.js'",
     "eslint": "eslint .",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
     "_prepublish": "npm run build:lib"
