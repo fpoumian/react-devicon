@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "React Devicon is a React implementation of the Devicon package, a library that contains the logos of several programming languages and libraries, as well as of different design and development tools.",
   "main": "index.js",
+  "author": "Fernando Poumián",
+  "license": "MIT",
   "keywords": [
     "react",
     "icons",
@@ -10,6 +12,9 @@
     "devicon",
     "svg",
     "components"
+  ],
+  "files": [
+    "lib"
   ],
   "scripts": {
     "test": "node scripts/test.js --env=jsdom",
@@ -33,8 +38,6 @@
       "git add"
     ]
   },
-  "author": "Fernando Poumián",
-  "license": "MIT",
   "dependencies": {
     "react-svg-inline": "^2.0.0"
   },
