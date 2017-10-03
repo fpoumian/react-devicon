@@ -25,12 +25,11 @@
     "format-all": "prettier --trailing-comma es5 --no-semi --single-quote --write './src/**/*.js' './scripts/**/*.js' './config/**/*.js' './docs/**/*.js' '!./docs/.cache/**/*.js' '!./docs/node_modules/**/*.js' '!./docs/public/**/*.js'",
     "lint": "eslint .",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
-    "patch": "npm version patch && npm run publish:lib",
-    "minor": "npm version minor && npm run publish:lib",
-    "major": "npm version major && npm rub publish:lib",
+    "patch": "npm version patch && npm publish lib",
+    "minor": "npm version minor && npm publish lib",
+    "major": "npm version major && npm publish lib",
     "precommit": "lint-staged",
-    "_prepublish:lib": "npm run lint && jest --env=jsdom && npm run build",
-    "publish:lib": "cd lib && npm publish"
+    "prepublish": "echo 'This package cannot be published directly. Run  \"npm publish lib\" instead' && exit 1"
   },
   "lint-staged": {
     "*.{js}": [
