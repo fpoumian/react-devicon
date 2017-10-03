@@ -1,0 +1,2 @@
+webpackJsonp([0x6991608bf8e0],{"./node_modules/json-loader/index.js!./.cache/json/heroku.json":function(o,n){o.exports={pathContext:{name:"heroku",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---heroku-5ceefd6068f759c20c67.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([8982497935871],{"./node_modules/json-loader/index.js!./.cache/json/backbonejs.json":function(n,o){n.exports={pathContext:{name:"backbonejs",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---backbonejs-b0c8733f543e3359272e.js.map

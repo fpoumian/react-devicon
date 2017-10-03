@@ -1,0 +1,2 @@
+webpackJsonp([0x72cf53706c20],{"./node_modules/json-loader/index.js!./.cache/json/bower.json":function(o,n){o.exports={pathContext:{name:"bower",versions:["original","original-wordmark","plain","plain-wordmark","line","line-wordmark"]}}}});
+//# sourceMappingURL=path---bower-3be2b3082a6643312905.js.map

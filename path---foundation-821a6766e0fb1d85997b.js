@@ -1,0 +1,2 @@
+webpackJsonp([0xc5cb39eeace3],{"./node_modules/json-loader/index.js!./.cache/json/foundation.json":function(n,o){n.exports={pathContext:{name:"foundation",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---foundation-821a6766e0fb1d85997b.js.map

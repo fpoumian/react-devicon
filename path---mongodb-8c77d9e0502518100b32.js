@@ -1,0 +1,2 @@
+webpackJsonp([0xc275d03e5ab6],{"./node_modules/json-loader/index.js!./.cache/json/mongodb.json":function(o,n){o.exports={pathContext:{name:"mongodb",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---mongodb-8c77d9e0502518100b32.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([0xeb8144b9238],{"./node_modules/json-loader/index.js!./.cache/json/git.json":function(n,o){n.exports={pathContext:{name:"git",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---git-4f68c6fd18c81125b786.js.map

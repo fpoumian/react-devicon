@@ -1,0 +1,2 @@
+webpackJsonp([0x8cc43c8d9a3a],{"./node_modules/json-loader/index.js!./.cache/json/wordpress.json":function(o,n){o.exports={pathContext:{name:"wordpress",versions:["original","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---wordpress-9a05e5c0669f38f54bd4.js.map

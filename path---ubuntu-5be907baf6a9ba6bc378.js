@@ -1,0 +1,2 @@
+webpackJsonp([9259479539598],{"./node_modules/json-loader/index.js!./.cache/json/ubuntu.json":function(n,o){n.exports={pathContext:{name:"ubuntu",versions:["plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---ubuntu-5be907baf6a9ba6bc378.js.map

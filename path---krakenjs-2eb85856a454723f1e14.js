@@ -1,0 +1,2 @@
+webpackJsonp([0xcbb1f6c256fd],{"./node_modules/json-loader/index.js!./.cache/json/krakenjs.json":function(n,o){n.exports={pathContext:{name:"krakenjs",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---krakenjs-2eb85856a454723f1e14.js.map

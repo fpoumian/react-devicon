@@ -1,0 +1,2 @@
+webpackJsonp([0x5b7b99a5e439],{"./node_modules/json-loader/index.js!./.cache/json/gimp.json":function(n,o){n.exports={pathContext:{name:"gimp",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---gimp-ddc99d2c94ed421171ea.js.map

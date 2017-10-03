@@ -1,0 +1,2 @@
+webpackJsonp([0xa33373a4302],{"./node_modules/json-loader/index.js!./.cache/json/vim.json":function(n,o){n.exports={pathContext:{name:"vim",versions:["original","plain"]}}}});
+//# sourceMappingURL=path---vim-336760aaa8b1416166a0.js.map

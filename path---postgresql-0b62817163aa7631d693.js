@@ -1,0 +1,2 @@
+webpackJsonp([0x93b617d160a1],{"./node_modules/json-loader/index.js!./.cache/json/postgresql.json":function(o,n){o.exports={pathContext:{name:"postgresql",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---postgresql-0b62817163aa7631d693.js.map

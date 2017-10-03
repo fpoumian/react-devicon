@@ -1,0 +1,2 @@
+webpackJsonp([50324247969632],{"./node_modules/json-loader/index.js!./.cache/json/moodle.json":function(o,n){o.exports={pathContext:{name:"moodle",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---moodle-7838c74ce10fe3fd51f2.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([0x878b20dd2f9a],{"./node_modules/json-loader/index.js!./.cache/json/coffeescript.json":function(o,e){o.exports={pathContext:{name:"coffeescript",versions:["original","original-wordmark"]}}}});
+//# sourceMappingURL=path---coffeescript-cbb23ebece05cab42b10.js.map

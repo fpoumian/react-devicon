@@ -1,0 +1,2 @@
+webpackJsonp([43757613533464],{"./node_modules/json-loader/index.js!./.cache/json/slack.json":function(n,o){n.exports={pathContext:{name:"slack",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---slack-aa33b8c96de8d4b65b0d.js.map

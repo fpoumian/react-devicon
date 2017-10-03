@@ -1,0 +1,2 @@
+webpackJsonp([54328513614010],{"./node_modules/json-loader/index.js!./.cache/json/html-5.json":function(n,o){n.exports={pathContext:{name:"html5",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---html-5-21260ddfd98a842ee127.js.map

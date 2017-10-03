@@ -1,0 +1,2 @@
+webpackJsonp([33839180252633],{"./node_modules/json-loader/index.js!./.cache/json/vagrant.json":function(n,a){n.exports={pathContext:{name:"vagrant",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---vagrant-2ded1b3f67de7895b37c.js.map

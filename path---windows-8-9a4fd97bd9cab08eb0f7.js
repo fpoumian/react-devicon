@@ -1,0 +1,2 @@
+webpackJsonp([0xb0981c62d9d],{"./node_modules/json-loader/index.js!./.cache/json/windows-8.json":function(o,n){o.exports={pathContext:{name:"windows8",versions:["original","original-wordmark"]}}}});
+//# sourceMappingURL=path---windows-8-9a4fd97bd9cab08eb0f7.js.map

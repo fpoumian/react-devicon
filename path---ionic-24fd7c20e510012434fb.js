@@ -1,0 +1,2 @@
+webpackJsonp([0x84ce41e784e9],{"./node_modules/json-loader/index.js!./.cache/json/ionic.json":function(o,n){o.exports={pathContext:{name:"ionic",versions:["original","original-wordmark"]}}}});
+//# sourceMappingURL=path---ionic-24fd7c20e510012434fb.js.map

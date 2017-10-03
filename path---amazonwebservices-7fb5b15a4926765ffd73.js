@@ -1,0 +1,2 @@
+webpackJsonp([0xca79192aafd0],{"./node_modules/json-loader/index.js!./.cache/json/amazonwebservices.json":function(a,o){a.exports={pathContext:{name:"amazonwebservices",versions:["original","original-wordmark","plain-wordmark"]}}}});
+//# sourceMappingURL=path---amazonwebservices-7fb5b15a4926765ffd73.js.map

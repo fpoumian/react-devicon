@@ -1,0 +1,2 @@
+webpackJsonp([0x6d095aa3a446],{"./node_modules/json-loader/index.js!./.cache/json/laravel.json":function(a,n){a.exports={pathContext:{name:"laravel",versions:["plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---laravel-6955cc4f9d8951f4fa37.js.map

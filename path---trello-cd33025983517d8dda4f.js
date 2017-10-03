@@ -1,0 +1,2 @@
+webpackJsonp([0xcd1e6731f334],{"./node_modules/json-loader/index.js!./.cache/json/trello.json":function(o,e){o.exports={pathContext:{name:"trello",versions:["plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---trello-cd33025983517d8dda4f.js.map

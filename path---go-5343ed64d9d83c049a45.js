@@ -1,0 +1,2 @@
+webpackJsonp([9925493097308],{"./node_modules/json-loader/index.js!./.cache/json/go.json":function(n,o){n.exports={pathContext:{name:"go",versions:["original","plain","line"]}}}});
+//# sourceMappingURL=path---go-5343ed64d9d83c049a45.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([43486006993984],{"./node_modules/json-loader/index.js!./.cache/json/github.json":function(o,n){o.exports={pathContext:{name:"github",versions:["original","original-wordmark"]}}}});
+//# sourceMappingURL=path---github-30482c95e84c1ec0aed3.js.map

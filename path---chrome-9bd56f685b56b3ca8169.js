@@ -1,0 +1,2 @@
+webpackJsonp([0x9256b94efb04],{"./node_modules/json-loader/index.js!./.cache/json/chrome.json":function(o,n){o.exports={pathContext:{name:"chrome",versions:["original","original-wordmark","plain","plain-wordmark"]}}}});
+//# sourceMappingURL=path---chrome-9bd56f685b56b3ca8169.js.map

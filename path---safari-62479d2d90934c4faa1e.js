@@ -1,0 +1,2 @@
+webpackJsonp([0x624183818d5c],{"./node_modules/json-loader/index.js!./.cache/json/safari.json":function(n,a){n.exports={pathContext:{name:"safari",versions:["original","original-wordmark","plain","plain-wordmark","line-wordmark","line"]}}}});
+//# sourceMappingURL=path---safari-62479d2d90934c4faa1e.js.map
