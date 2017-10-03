@@ -32,7 +32,7 @@
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "precommit": "lint-staged",
-    "prepublish": "npm run lint && npm test -- coverage && npm run build"
+    "prepublish": "npm run lint && jest --env=jsdom && npm run build"
   },
   "lint-staged": {
     "*.{js}": [
