@@ -1,1 +1,2 @@
-export { default } from './FacebookPlain'
+export { default } from "./FacebookPlain";
+

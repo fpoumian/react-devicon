@@ -1,1 +1,2 @@
-export { default } from './CoffeescriptOriginal'
+export { default } from "./CoffeescriptOriginal";
+

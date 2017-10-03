@@ -22,15 +22,17 @@
     "generate:components": "node scripts/generateComponents.js",
     "docs:copy-devicon-files": "node scripts/copyDeviconFiles.js",
     "prebuild:lib": "rimraf lib",
-    "build:lib": "npm-run-all --parallel build:commonjs build:copy-files",
+    "build": "npm-run-all --parallel build:commonjs build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore __tests__/*.js",
     "format-all": "prettier --trailing-comma es5 --no-semi --single-quote --write './src/**/*.js' './scripts/**/*.js' './config/**/*.js' './docs/**/*.js' '!./docs/.cache/**/*.js' '!./docs/node_modules/**/*.js' '!./docs/public/**/*.js'",
-    "eslint": "eslint",
-    "lint-all": "yarn eslint -- .",
+    "lint": "eslint .",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
     "precommit": "lint-staged",
-    "_prepublish": "npm run build:lib"
+    "prepublish": "npm run lint && npm test && npm run build"
   },
   "lint-staged": {
     "*.{js}": [
@@ -39,6 +41,7 @@
     ]
   },
   "dependencies": {
+    "judex-component-generator": "^0.1.0",
     "react-svg-inline": "^2.0.0"
   },
   "peerDependencies": {

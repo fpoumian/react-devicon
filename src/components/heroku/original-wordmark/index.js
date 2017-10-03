@@ -1,1 +1,2 @@
-export { default } from './HerokuOriginalWordmark'
+export { default } from "./HerokuOriginalWordmark";
+

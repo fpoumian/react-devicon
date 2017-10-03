@@ -1,1 +1,2 @@
-export { default } from './IntellijPlainWordmark'
+export { default } from "./IntellijPlainWordmark";
+

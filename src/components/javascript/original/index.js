@@ -1,1 +1,2 @@
-export { default } from './JavascriptOriginal'
+export { default } from "./JavascriptOriginal";
+

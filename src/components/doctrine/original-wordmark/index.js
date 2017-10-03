@@ -1,1 +1,2 @@
-export { default } from './DoctrineOriginalWordmark'
+export { default } from "./DoctrineOriginalWordmark";
+

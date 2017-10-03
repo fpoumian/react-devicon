@@ -1,1 +1,2 @@
-export { default } from './IonicOriginal'
+export { default } from "./IonicOriginal";
+

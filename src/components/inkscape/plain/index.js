@@ -1,1 +1,2 @@
-export { default } from './InkscapePlain'
+export { default } from "./InkscapePlain";
+

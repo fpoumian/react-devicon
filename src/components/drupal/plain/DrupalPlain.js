@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './DrupalPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** DrupalPlain */
-function DrupalPlain({ width, height }) {
+function DrupalPlain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="DrupalPlain"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function DrupalPlain({ width, height }) {
 
 DrupalPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default DrupalPlain

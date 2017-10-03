@@ -1,1 +1,2 @@
-export { default } from './PhpstormPlainWordmark'
+export { default } from "./PhpstormPlainWordmark";
+

@@ -1,1 +1,2 @@
-export { default } from './FirefoxPlain'
+export { default } from "./FirefoxPlain";
+

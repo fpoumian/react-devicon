@@ -1,1 +1,2 @@
-export { default } from './MoodleOriginal'
+export { default } from "./MoodleOriginal";
+

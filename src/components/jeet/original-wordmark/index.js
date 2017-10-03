@@ -1,1 +1,2 @@
-export { default } from './JeetOriginalWordmark'
+export { default } from "./JeetOriginalWordmark";
+

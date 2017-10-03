@@ -1,1 +1,2 @@
-export { default } from './RedisOriginalWordmark'
+export { default } from "./RedisOriginalWordmark";
+

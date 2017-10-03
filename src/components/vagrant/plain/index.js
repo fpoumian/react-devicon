@@ -1,1 +1,2 @@
-export { default } from './VagrantPlain'
+export { default } from "./VagrantPlain";
+

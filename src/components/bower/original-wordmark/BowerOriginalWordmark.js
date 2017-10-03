@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './BowerOriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** BowerOriginalWordmark */
-function BowerOriginalWordmark({ width, height }) {
+function BowerOriginalWordmark({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="BowerOriginalWordmark"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function BowerOriginalWordmark({ width, height }) {
 
 BowerOriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default BowerOriginalWordmark

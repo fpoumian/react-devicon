@@ -1,1 +1,2 @@
-export { default } from './SshOriginalWordmark'
+export { default } from "./SshOriginalWordmark";
+

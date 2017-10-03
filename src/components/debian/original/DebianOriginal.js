@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './DebianOriginal.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** DebianOriginal */
-function DebianOriginal({ width, height }) {
+function DebianOriginal({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="DebianOriginal"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function DebianOriginal({ width, height }) {
 
 DebianOriginal.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default DebianOriginal

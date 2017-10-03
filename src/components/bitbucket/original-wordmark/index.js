@@ -1,1 +1,2 @@
-export { default } from './BitbucketOriginalWordmark'
+export { default } from "./BitbucketOriginalWordmark";
+

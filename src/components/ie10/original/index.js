@@ -1,1 +1,2 @@
-export { default } from './Ie10Original'
+export { default } from "./Ie10Original";
+

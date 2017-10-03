@@ -1,1 +1,2 @@
-export { default } from './RubyOriginalWordmark'
+export { default } from "./RubyOriginalWordmark";
+

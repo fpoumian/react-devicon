@@ -1,1 +1,2 @@
-export { default } from './YarnOriginalWordmark'
+export { default } from "./YarnOriginalWordmark";
+

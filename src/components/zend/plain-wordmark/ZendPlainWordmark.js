@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './ZendPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** ZendPlainWordmark */
-function ZendPlainWordmark({ width, height }) {
+function ZendPlainWordmark({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="ZendPlainWordmark"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function ZendPlainWordmark({ width, height }) {
 
 ZendPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default ZendPlainWordmark

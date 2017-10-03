@@ -1,1 +1,2 @@
-export { default } from './JqueryOriginal'
+export { default } from "./JqueryOriginal";
+

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './RedisOriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** RedisOriginalWordmark */
-function RedisOriginalWordmark({ width, height }) {
+function RedisOriginalWordmark({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="RedisOriginalWordmark"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function RedisOriginalWordmark({ width, height }) {
 
 RedisOriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default RedisOriginalWordmark

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './BehanceOriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** BehanceOriginalWordmark */
-function BehanceOriginalWordmark({ width, height }) {
+function BehanceOriginalWordmark({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="BehanceOriginalWordmark"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function BehanceOriginalWordmark({ width, height }) {
 
 BehanceOriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default BehanceOriginalWordmark

@@ -1,1 +1,2 @@
-export { default } from './JetbrainsOriginal'
+export { default } from "./JetbrainsOriginal";
+

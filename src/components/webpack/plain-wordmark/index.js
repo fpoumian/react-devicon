@@ -1,1 +1,2 @@
-export { default } from './WebpackPlainWordmark'
+export { default } from "./WebpackPlainWordmark";
+

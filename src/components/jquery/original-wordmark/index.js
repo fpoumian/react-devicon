@@ -1,1 +1,2 @@
-export { default } from './JqueryOriginalWordmark'
+export { default } from "./JqueryOriginalWordmark";
+

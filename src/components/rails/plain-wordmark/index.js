@@ -1,1 +1,2 @@
-export { default } from './RailsPlainWordmark'
+export { default } from "./RailsPlainWordmark";
+

@@ -1,1 +1,2 @@
-export { default } from './ConfluenceOriginalWordmark'
+export { default } from "./ConfluenceOriginalWordmark";
+

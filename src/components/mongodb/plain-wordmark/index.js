@@ -1,1 +1,2 @@
-export { default } from './MongodbPlainWordmark'
+export { default } from "./MongodbPlainWordmark";
+

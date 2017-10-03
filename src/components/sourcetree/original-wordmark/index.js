@@ -1,1 +1,2 @@
-export { default } from './SourcetreeOriginalWordmark'
+export { default } from "./SourcetreeOriginalWordmark";
+

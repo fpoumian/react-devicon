@@ -1,1 +1,2 @@
-export { default } from './AppceleratorOriginal'
+export { default } from "./AppceleratorOriginal";
+

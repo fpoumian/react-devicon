@@ -1,1 +1,2 @@
-export { default } from './PostgresqlOriginalWordmark'
+export { default } from "./PostgresqlOriginalWordmark";
+

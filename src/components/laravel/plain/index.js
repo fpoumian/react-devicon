@@ -1,1 +1,2 @@
-export { default } from './LaravelPlain'
+export { default } from "./LaravelPlain";
+

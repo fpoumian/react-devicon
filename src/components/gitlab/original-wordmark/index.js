@@ -1,1 +1,2 @@
-export { default } from './GitlabOriginalWordmark'
+export { default } from "./GitlabOriginalWordmark";
+

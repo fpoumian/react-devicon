@@ -1,1 +1,2 @@
-export { default } from './DebianPlainWordmark'
+export { default } from "./DebianPlainWordmark";
+

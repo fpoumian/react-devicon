@@ -1,1 +1,2 @@
-export { default } from './CouchdbOriginal'
+export { default } from "./CouchdbOriginal";
+

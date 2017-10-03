@@ -1,1 +1,2 @@
-export { default } from './RailsPlain'
+export { default } from "./RailsPlain";
+

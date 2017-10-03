@@ -1,1 +1,2 @@
-export { default } from './SafariPlain'
+export { default } from "./SafariPlain";
+

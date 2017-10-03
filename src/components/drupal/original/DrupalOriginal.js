@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './DrupalOriginal.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** DrupalOriginal */
-function DrupalOriginal({ width, height }) {
+function DrupalOriginal({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="DrupalOriginal"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function DrupalOriginal({ width, height }) {
 
 DrupalOriginal.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default DrupalOriginal

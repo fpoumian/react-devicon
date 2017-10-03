@@ -1,33 +1,39 @@
-import React from 'react'
-import { shallow, render } from 'enzyme'
-import ExpressOriginal from '../index.js'
 
-describe('ExpressOriginal', () => {
-  it('should contain one SVGInline element', () => {
+import React from "react"
+import { shallow, render } from "enzyme"
+import ExpressOriginal from "../index.js"
+
+describe("ExpressOriginal", () => {
+  it("should contain one SVGInline element", () => {
     const wrapper = shallow(<ExpressOriginal />)
-    expect(wrapper.is('SVGInline')).toBe(true)
+    expect(wrapper.is("SVGInline")).toBe(true)
   })
-  it('should accept width and height props as integer and convert them to pixels', () => {
-    const wrapper = shallow(<ExpressOriginal height={100} width={100} />)
-    expect(wrapper.props().height).toEqual('100px')
-    expect(wrapper.props().width).toEqual('100px')
-  })
-
-  it('should accept width and height props as string', () => {
+  it("should accept width and height props as integer and convert them to pixels", () => {
     const wrapper = shallow(
-      <ExpressOriginal height={'10rem'} width={'10rem'} />
+      <ExpressOriginal height={100} width={100} />
     )
-    expect(wrapper.props().height).toEqual('10rem')
-    expect(wrapper.props().width).toEqual('10rem')
+    expect(wrapper.props().height).toEqual("100px")
+    expect(wrapper.props().width).toEqual("100px")
   })
 
-  it('should render a span element in DOM', () => {
-    const wrapper = render(<ExpressOriginal />)
-    expect(wrapper.find('span')).toHaveLength(1)
-    expect(wrapper.find('span').hasClass('ExpressOriginal')).toBe(true)
+  it("should accept width and height props as string", () => {
+    const wrapper = shallow(
+      <ExpressOriginal height={"10rem"} width={"10rem"} />
+    )
+    expect(wrapper.props().height).toEqual("10rem")
+    expect(wrapper.props().width).toEqual("10rem")
   })
-  it('should render an svg element in DOM', () => {
+
+  it("should render a span element in DOM", () => {
     const wrapper = render(<ExpressOriginal />)
-    expect(wrapper.find('svg')).toHaveLength(1)
+    expect(wrapper.find("span")).toHaveLength(1)
+    expect(wrapper.find("span").hasClass("ExpressOriginal")).toBe(
+      true
+    )
+  })
+  it("should render an svg element in DOM", () => {
+    const wrapper = render(<ExpressOriginal />)
+    expect(wrapper.find("svg")).toHaveLength(1)
   })
 })
+

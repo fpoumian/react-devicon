@@ -1,1 +1,2 @@
-export { default } from './IntellijOriginal'
+export { default } from "./IntellijOriginal";
+

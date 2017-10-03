@@ -1,1 +1,2 @@
-export { default } from './NodejsPlainWordmark'
+export { default } from "./NodejsPlainWordmark";
+

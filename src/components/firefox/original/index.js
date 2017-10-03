@@ -1,1 +1,2 @@
-export { default } from './FirefoxOriginal'
+export { default } from "./FirefoxOriginal";
+

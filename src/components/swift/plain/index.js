@@ -1,1 +1,2 @@
-export { default } from './SwiftPlain'
+export { default } from "./SwiftPlain";
+

@@ -1,1 +1,2 @@
-export { default } from './JeetOriginal'
+export { default } from "./JeetOriginal";
+

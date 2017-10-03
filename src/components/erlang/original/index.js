@@ -1,1 +1,2 @@
-export { default } from './ErlangOriginal'
+export { default } from "./ErlangOriginal";
+

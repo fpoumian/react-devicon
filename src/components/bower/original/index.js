@@ -1,1 +1,2 @@
-export { default } from './BowerOriginal'
+export { default } from "./BowerOriginal";
+

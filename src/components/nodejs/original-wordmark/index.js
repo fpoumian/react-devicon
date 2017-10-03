@@ -1,1 +1,2 @@
-export { default } from './NodejsOriginalWordmark'
+export { default } from "./NodejsOriginalWordmark";
+

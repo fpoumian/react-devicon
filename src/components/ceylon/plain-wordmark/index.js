@@ -1,1 +1,2 @@
-export { default } from './CeylonPlainWordmark'
+export { default } from "./CeylonPlainWordmark";
+

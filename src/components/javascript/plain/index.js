@@ -1,1 +1,2 @@
-export { default } from './JavascriptPlain'
+export { default } from "./JavascriptPlain";
+

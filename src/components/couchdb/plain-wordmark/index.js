@@ -1,1 +1,2 @@
-export { default } from './CouchdbPlainWordmark'
+export { default } from "./CouchdbPlainWordmark";
+

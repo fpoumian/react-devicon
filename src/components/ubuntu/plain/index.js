@@ -1,1 +1,2 @@
-export { default } from './UbuntuPlain'
+export { default } from "./UbuntuPlain";
+

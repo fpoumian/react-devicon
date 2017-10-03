@@ -1,1 +1,2 @@
-export { default } from './TypescriptOriginal'
+export { default } from "./TypescriptOriginal";
+

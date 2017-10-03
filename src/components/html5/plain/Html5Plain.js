@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './Html5Plain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** Html5Plain */
-function Html5Plain({ width, height }) {
+function Html5Plain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="Html5Plain"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function Html5Plain({ width, height }) {
 
 Html5Plain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default Html5Plain

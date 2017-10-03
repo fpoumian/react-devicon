@@ -1,1 +1,2 @@
-export { default } from './WebpackPlain'
+export { default } from "./WebpackPlain";
+

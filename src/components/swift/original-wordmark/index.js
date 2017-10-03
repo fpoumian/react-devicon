@@ -1,1 +1,2 @@
-export { default } from './SwiftOriginalWordmark'
+export { default } from "./SwiftOriginalWordmark";
+

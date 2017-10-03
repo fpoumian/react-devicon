@@ -1,1 +1,2 @@
-export { default } from './ApachePlainWordmark'
+export { default } from "./ApachePlainWordmark";
+

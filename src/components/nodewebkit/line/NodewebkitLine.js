@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './NodewebkitLine.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** NodewebkitLine */
-function NodewebkitLine({ width, height }) {
+function NodewebkitLine({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="NodewebkitLine"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function NodewebkitLine({ width, height }) {
 
 NodewebkitLine.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default NodewebkitLine

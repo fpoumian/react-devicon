@@ -1,1 +1,2 @@
-export { default } from './ErlangOriginalWordmark'
+export { default } from "./ErlangOriginalWordmark";
+

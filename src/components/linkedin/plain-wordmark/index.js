@@ -1,1 +1,2 @@
-export { default } from './LinkedinPlainWordmark'
+export { default } from "./LinkedinPlainWordmark";
+

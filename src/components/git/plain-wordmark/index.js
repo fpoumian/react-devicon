@@ -1,1 +1,2 @@
-export { default } from './GitPlainWordmark'
+export { default } from "./GitPlainWordmark";
+

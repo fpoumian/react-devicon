@@ -1,1 +1,2 @@
-export { default } from './SketchLineWordmark'
+export { default } from "./SketchLineWordmark";
+

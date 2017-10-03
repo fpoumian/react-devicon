@@ -1,1 +1,2 @@
-export { default } from './VisualstudioPlainWordmark'
+export { default } from "./VisualstudioPlainWordmark";
+

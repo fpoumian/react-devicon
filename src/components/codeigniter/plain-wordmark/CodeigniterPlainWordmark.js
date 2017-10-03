@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './CodeigniterPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** CodeigniterPlainWordmark */
-function CodeigniterPlainWordmark({ width, height }) {
+function CodeigniterPlainWordmark({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="CodeigniterPlainWordmark"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function CodeigniterPlainWordmark({ width, height }) {
 
 CodeigniterPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default CodeigniterPlainWordmark

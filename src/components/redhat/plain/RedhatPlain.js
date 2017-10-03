@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './RedhatPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** RedhatPlain */
-function RedhatPlain({ width, height }) {
+function RedhatPlain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="RedhatPlain"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function RedhatPlain({ width, height }) {
 
 RedhatPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default RedhatPlain

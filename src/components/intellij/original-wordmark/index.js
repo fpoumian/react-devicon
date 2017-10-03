@@ -1,1 +1,2 @@
-export { default } from './IntellijOriginalWordmark'
+export { default } from "./IntellijOriginalWordmark";
+

@@ -1,1 +1,2 @@
-export { default } from './TrelloPlainWordmark'
+export { default } from "./TrelloPlainWordmark";
+

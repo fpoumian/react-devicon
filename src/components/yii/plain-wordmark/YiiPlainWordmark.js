@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './YiiPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** YiiPlainWordmark */
-function YiiPlainWordmark({ width, height }) {
+function YiiPlainWordmark({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="YiiPlainWordmark"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function YiiPlainWordmark({ width, height }) {
 
 YiiPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default YiiPlainWordmark

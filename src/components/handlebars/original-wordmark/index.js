@@ -1,1 +1,2 @@
-export { default } from './HandlebarsOriginalWordmark'
+export { default } from "./HandlebarsOriginalWordmark";
+

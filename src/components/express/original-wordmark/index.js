@@ -1,1 +1,2 @@
-export { default } from './ExpressOriginalWordmark'
+export { default } from "./ExpressOriginalWordmark";
+

@@ -1,1 +1,2 @@
-export { default } from './BehanceOriginalWordmark'
+export { default } from "./BehanceOriginalWordmark";
+

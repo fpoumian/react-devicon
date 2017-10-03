@@ -1,1 +1,2 @@
-export { default } from './RubyPlainWordmark'
+export { default } from "./RubyPlainWordmark";
+

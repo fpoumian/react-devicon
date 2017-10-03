@@ -1,1 +1,2 @@
-export { default } from './PhotoshopLine'
+export { default } from "./PhotoshopLine";
+

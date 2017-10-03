@@ -1,1 +1,2 @@
-export { default } from './DrupalPlain'
+export { default } from "./DrupalPlain";
+

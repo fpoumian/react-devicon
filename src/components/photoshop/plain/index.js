@@ -1,1 +1,2 @@
-export { default } from './PhotoshopPlain'
+export { default } from "./PhotoshopPlain";
+

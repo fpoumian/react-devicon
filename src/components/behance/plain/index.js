@@ -1,1 +1,2 @@
-export { default } from './BehancePlain'
+export { default } from "./BehancePlain";
+

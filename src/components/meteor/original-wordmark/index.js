@@ -1,1 +1,2 @@
-export { default } from './MeteorOriginalWordmark'
+export { default } from "./MeteorOriginalWordmark";
+

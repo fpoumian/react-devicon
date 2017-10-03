@@ -1,1 +1,2 @@
-export { default } from './PythonPlainWordmark'
+export { default } from "./PythonPlainWordmark";
+

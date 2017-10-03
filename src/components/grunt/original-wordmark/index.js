@@ -1,1 +1,2 @@
-export { default } from './GruntOriginalWordmark'
+export { default } from "./GruntOriginalWordmark";
+

@@ -1,1 +1,2 @@
-export { default } from './YiiOriginalWordmark'
+export { default } from "./YiiOriginalWordmark";
+

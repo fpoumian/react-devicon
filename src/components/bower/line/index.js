@@ -1,1 +1,2 @@
-export { default } from './BowerLine'
+export { default } from "./BowerLine";
+

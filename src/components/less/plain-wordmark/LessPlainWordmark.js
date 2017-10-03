@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './LessPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** LessPlainWordmark */
-function LessPlainWordmark({ width, height }) {
+function LessPlainWordmark({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="LessPlainWordmark"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function LessPlainWordmark({ width, height }) {
 
 LessPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default LessPlainWordmark

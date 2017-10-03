@@ -1,1 +1,2 @@
-export { default } from './PythonOriginalWordmark'
+export { default } from "./PythonOriginalWordmark";
+

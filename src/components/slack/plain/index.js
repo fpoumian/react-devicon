@@ -1,1 +1,2 @@
-export { default } from './SlackPlain'
+export { default } from "./SlackPlain";
+

@@ -1,1 +1,2 @@
-export { default } from './VagrantOriginalWordmark'
+export { default } from "./VagrantOriginalWordmark";
+

@@ -1,1 +1,2 @@
-export { default } from './PhpstormOriginal'
+export { default } from "./PhpstormOriginal";
+

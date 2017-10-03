@@ -1,1 +1,2 @@
-export { default } from './DrupalOriginalWordmark'
+export { default } from "./DrupalOriginalWordmark";
+

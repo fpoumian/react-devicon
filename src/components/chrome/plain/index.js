@@ -1,1 +1,2 @@
-export { default } from './ChromePlain'
+export { default } from "./ChromePlain";
+

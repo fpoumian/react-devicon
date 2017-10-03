@@ -1,1 +1,2 @@
-export { default } from './JavaOriginal'
+export { default } from "./JavaOriginal";
+

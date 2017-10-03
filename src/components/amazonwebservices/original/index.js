@@ -1,1 +1,2 @@
-export { default } from './AmazonwebservicesOriginal'
+export { default } from "./AmazonwebservicesOriginal";
+

@@ -1,1 +1,2 @@
-export { default } from './SafariPlainWordmark'
+export { default } from "./SafariPlainWordmark";
+

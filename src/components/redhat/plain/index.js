@@ -1,1 +1,2 @@
-export { default } from './RedhatPlain'
+export { default } from "./RedhatPlain";
+

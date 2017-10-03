@@ -1,1 +1,2 @@
-export { default } from './DotNetPlain'
+export { default } from "./DotNetPlain";
+

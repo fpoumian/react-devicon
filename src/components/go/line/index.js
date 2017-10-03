@@ -1,1 +1,2 @@
-export { default } from './GoLine'
+export { default } from "./GoLine";
+

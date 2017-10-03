@@ -1,1 +1,2 @@
-export { default } from './GooglePlain'
+export { default } from "./GooglePlain";
+

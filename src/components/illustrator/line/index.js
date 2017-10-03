@@ -1,1 +1,2 @@
-export { default } from './IllustratorLine'
+export { default } from "./IllustratorLine";
+

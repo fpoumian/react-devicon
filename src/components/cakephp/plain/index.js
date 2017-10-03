@@ -1,1 +1,2 @@
-export { default } from './CakephpPlain'
+export { default } from "./CakephpPlain";
+

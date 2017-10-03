@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './LaravelPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** LaravelPlain */
-function LaravelPlain({ width, height }) {
+function LaravelPlain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="LaravelPlain"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function LaravelPlain({ width, height }) {
 
 LaravelPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default LaravelPlain

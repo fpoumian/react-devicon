@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './CeylonPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** CeylonPlain */
-function CeylonPlain({ width, height }) {
+function CeylonPlain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="CeylonPlain"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function CeylonPlain({ width, height }) {
 
 CeylonPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default CeylonPlain

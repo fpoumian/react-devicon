@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './WebstormPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** WebstormPlain */
-function WebstormPlain({ width, height }) {
+function WebstormPlain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="WebstormPlain"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function WebstormPlain({ width, height }) {
 
 WebstormPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default WebstormPlain

@@ -1,1 +1,2 @@
-export { default } from './FirefoxOriginalWordmark'
+export { default } from "./FirefoxOriginalWordmark";
+

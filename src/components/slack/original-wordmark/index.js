@@ -1,1 +1,2 @@
-export { default } from './SlackOriginalWordmark'
+export { default } from "./SlackOriginalWordmark";
+

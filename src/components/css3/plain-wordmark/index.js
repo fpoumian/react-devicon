@@ -1,1 +1,2 @@
-export { default } from './Css3PlainWordmark'
+export { default } from "./Css3PlainWordmark";
+

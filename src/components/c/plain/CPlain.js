@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -5,9 +6,9 @@ import iconSVG from './CPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** CPlain */
-function CPlain({ width, height }) {
+function CPlain({width, height}) {
   return (
-    <SVGInline
+     <SVGInline
       classSuffix="-devicon"
       className="CPlain"
       svg={iconSVG}
@@ -19,7 +20,7 @@ function CPlain({ width, height }) {
 
 CPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default CPlain

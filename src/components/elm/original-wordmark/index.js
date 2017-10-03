@@ -1,1 +1,2 @@
-export { default } from './ElmOriginalWordmark'
+export { default } from "./ElmOriginalWordmark";
+

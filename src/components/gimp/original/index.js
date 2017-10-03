@@ -1,1 +1,2 @@
-export { default } from './GimpOriginal'
+export { default } from "./GimpOriginal";
+

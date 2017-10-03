@@ -1,1 +1,2 @@
-export { default } from './DjangoOriginal'
+export { default } from "./DjangoOriginal";
+

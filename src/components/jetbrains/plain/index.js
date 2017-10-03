@@ -1,1 +1,2 @@
-export { default } from './JetbrainsPlain'
+export { default } from "./JetbrainsPlain";
+
