@@ -1,2 +1,1 @@
-export { default } from "./FirefoxPlainWordmark";
-
+export { default } from './FirefoxPlainWordmark'

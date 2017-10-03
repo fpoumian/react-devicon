@@ -1,2 +1,1 @@
-export { default } from "./JeetPlainWordmark";
-
+export { default } from './JeetPlainWordmark'

@@ -1,2 +1,1 @@
-export { default } from "./JavaPlain";
-
+export { default } from './JavaPlain'

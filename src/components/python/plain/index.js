@@ -1,2 +1,1 @@
-export { default } from "./PythonPlain";
-
+export { default } from './PythonPlain'

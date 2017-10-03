@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './NodewebkitPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** NodewebkitPlainWordmark */
-function NodewebkitPlainWordmark({width, height}) {
+function NodewebkitPlainWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="NodewebkitPlainWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function NodewebkitPlainWordmark({width, height}) {
 
 NodewebkitPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default NodewebkitPlainWordmark

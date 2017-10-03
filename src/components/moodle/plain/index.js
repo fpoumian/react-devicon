@@ -1,2 +1,1 @@
-export { default } from "./MoodlePlain";
-
+export { default } from './MoodlePlain'

@@ -1,2 +1,1 @@
-export { default } from "./GitOriginalWordmark";
-
+export { default } from './GitOriginalWordmark'

@@ -1,2 +1,1 @@
-export { default } from "./SequelizeOriginal";
-
+export { default } from './SequelizeOriginal'

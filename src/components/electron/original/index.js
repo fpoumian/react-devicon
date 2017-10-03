@@ -1,2 +1,1 @@
-export { default } from "./ElectronOriginal";
-
+export { default } from './ElectronOriginal'

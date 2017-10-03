@@ -1,2 +1,1 @@
-export { default } from "./VimOriginal";
-
+export { default } from './VimOriginal'

@@ -1,2 +1,1 @@
-export { default } from "./BowerPlainWordmark";
-
+export { default } from './BowerPlainWordmark'

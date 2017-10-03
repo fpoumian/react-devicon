@@ -1,2 +1,1 @@
-export { default } from "./YiiOriginal";
-
+export { default } from './YiiOriginal'

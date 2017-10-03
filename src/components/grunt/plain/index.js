@@ -1,2 +1,1 @@
-export { default } from "./GruntPlain";
-
+export { default } from './GruntPlain'

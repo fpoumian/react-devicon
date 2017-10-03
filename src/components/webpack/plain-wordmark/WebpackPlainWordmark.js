@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './WebpackPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** WebpackPlainWordmark */
-function WebpackPlainWordmark({width, height}) {
+function WebpackPlainWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="WebpackPlainWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function WebpackPlainWordmark({width, height}) {
 
 WebpackPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default WebpackPlainWordmark

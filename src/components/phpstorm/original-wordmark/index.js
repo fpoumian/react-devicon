@@ -1,2 +1,1 @@
-export { default } from "./PhpstormOriginalWordmark";
-
+export { default } from './PhpstormOriginalWordmark'

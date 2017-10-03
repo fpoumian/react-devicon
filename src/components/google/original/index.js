@@ -1,2 +1,1 @@
-export { default } from "./GoogleOriginal";
-
+export { default } from './GoogleOriginal'

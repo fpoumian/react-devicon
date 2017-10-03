@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './CakephpPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** CakephpPlainWordmark */
-function CakephpPlainWordmark({width, height}) {
+function CakephpPlainWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="CakephpPlainWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function CakephpPlainWordmark({width, height}) {
 
 CakephpPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default CakephpPlainWordmark

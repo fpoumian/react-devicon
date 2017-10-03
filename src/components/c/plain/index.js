@@ -1,2 +1,1 @@
-export { default } from "./CPlain";
-
+export { default } from './CPlain'

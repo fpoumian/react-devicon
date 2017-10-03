@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './ApacheLine.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** ApacheLine */
-function ApacheLine({width, height}) {
+function ApacheLine({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="ApacheLine"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function ApacheLine({width, height}) {
 
 ApacheLine.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default ApacheLine

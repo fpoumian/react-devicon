@@ -1,2 +1,1 @@
-export { default } from "./JavaOriginalWordmark";
-
+export { default } from './JavaOriginalWordmark'

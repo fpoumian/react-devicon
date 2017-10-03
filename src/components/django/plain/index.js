@@ -1,2 +1,1 @@
-export { default } from "./DjangoPlain";
-
+export { default } from './DjangoPlain'

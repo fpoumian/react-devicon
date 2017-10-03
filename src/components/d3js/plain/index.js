@@ -1,2 +1,1 @@
-export { default } from "./D3jsPlain";
-
+export { default } from './D3jsPlain'

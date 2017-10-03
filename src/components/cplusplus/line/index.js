@@ -1,2 +1,1 @@
-export { default } from "./CplusplusLine";
-
+export { default } from './CplusplusLine'

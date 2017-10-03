@@ -1,2 +1,1 @@
-export { default } from "./LaravelPlainWordmark";
-
+export { default } from './LaravelPlainWordmark'

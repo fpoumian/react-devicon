@@ -1,2 +1,1 @@
-export { default } from "./TomcatOriginal";
-
+export { default } from './TomcatOriginal'

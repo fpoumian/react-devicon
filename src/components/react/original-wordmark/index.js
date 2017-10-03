@@ -1,2 +1,1 @@
-export { default } from "./ReactOriginalWordmark";
-
+export { default } from './ReactOriginalWordmark'

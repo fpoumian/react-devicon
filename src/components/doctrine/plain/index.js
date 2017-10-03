@@ -1,2 +1,1 @@
-export { default } from "./DoctrinePlain";
-
+export { default } from './DoctrinePlain'

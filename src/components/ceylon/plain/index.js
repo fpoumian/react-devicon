@@ -1,2 +1,1 @@
-export { default } from "./CeylonPlain";
-
+export { default } from './CeylonPlain'

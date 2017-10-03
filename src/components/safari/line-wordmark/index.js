@@ -1,2 +1,1 @@
-export { default } from "./SafariLineWordmark";
-
+export { default } from './SafariLineWordmark'

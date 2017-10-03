@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './BowerLine.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** BowerLine */
-function BowerLine({width, height}) {
+function BowerLine({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="BowerLine"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function BowerLine({width, height}) {
 
 BowerLine.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default BowerLine

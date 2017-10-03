@@ -1,2 +1,1 @@
-export { default } from "./SafariLine";
-
+export { default } from './SafariLine'

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './RubyminePlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** RubyminePlain */
-function RubyminePlain({width, height}) {
+function RubyminePlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="RubyminePlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function RubyminePlain({width, height}) {
 
 RubyminePlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default RubyminePlain

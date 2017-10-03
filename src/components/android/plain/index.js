@@ -1,2 +1,1 @@
-export { default } from "./AndroidPlain";
-
+export { default } from './AndroidPlain'

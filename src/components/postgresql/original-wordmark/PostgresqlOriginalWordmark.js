@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './PostgresqlOriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** PostgresqlOriginalWordmark */
-function PostgresqlOriginalWordmark({width, height}) {
+function PostgresqlOriginalWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="PostgresqlOriginalWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function PostgresqlOriginalWordmark({width, height}) {
 
 PostgresqlOriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default PostgresqlOriginalWordmark

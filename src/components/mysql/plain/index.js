@@ -1,2 +1,1 @@
-export { default } from "./MysqlPlain";
-
+export { default } from './MysqlPlain'

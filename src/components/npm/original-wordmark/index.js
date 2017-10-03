@@ -1,2 +1,1 @@
-export { default } from "./NpmOriginalWordmark";
-
+export { default } from './NpmOriginalWordmark'

@@ -1,2 +1,1 @@
-export { default } from "./ProtractorPlain";
-
+export { default } from './ProtractorPlain'

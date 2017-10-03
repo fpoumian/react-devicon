@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './Windows8OriginalWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** Windows8OriginalWordmark */
-function Windows8OriginalWordmark({width, height}) {
+function Windows8OriginalWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="Windows8OriginalWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function Windows8OriginalWordmark({width, height}) {
 
 Windows8OriginalWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default Windows8OriginalWordmark

@@ -1,2 +1,1 @@
-export { default } from "./JqueryPlainWordmark";
-
+export { default } from './JqueryPlainWordmark'

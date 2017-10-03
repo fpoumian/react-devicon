@@ -1,2 +1,1 @@
-export { default } from "./JasminePlainWordmark";
-
+export { default } from './JasminePlainWordmark'

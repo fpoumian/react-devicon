@@ -1,2 +1,1 @@
-export { default } from "./KrakenjsOriginal";
-
+export { default } from './KrakenjsOriginal'

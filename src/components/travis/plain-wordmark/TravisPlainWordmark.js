@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './TravisPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** TravisPlainWordmark */
-function TravisPlainWordmark({width, height}) {
+function TravisPlainWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="TravisPlainWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function TravisPlainWordmark({width, height}) {
 
 TravisPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default TravisPlainWordmark

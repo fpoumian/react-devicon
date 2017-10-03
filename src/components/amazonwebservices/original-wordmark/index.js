@@ -1,2 +1,1 @@
-export { default } from "./AmazonwebservicesOriginalWordmark";
-
+export { default } from './AmazonwebservicesOriginalWordmark'

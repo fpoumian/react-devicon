@@ -1,2 +1,1 @@
-export { default } from "./WebstormOriginalWordmark";
-
+export { default } from './WebstormOriginalWordmark'

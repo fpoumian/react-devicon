@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './MysqlPlain.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** MysqlPlain */
-function MysqlPlain({width, height}) {
+function MysqlPlain({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="MysqlPlain"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function MysqlPlain({width, height}) {
 
 MysqlPlain.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default MysqlPlain

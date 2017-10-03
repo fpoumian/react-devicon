@@ -1,2 +1,1 @@
-export { default } from "./SequelizeOriginalWordmark";
-
+export { default } from './SequelizeOriginalWordmark'

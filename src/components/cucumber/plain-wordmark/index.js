@@ -1,2 +1,1 @@
-export { default } from "./CucumberPlainWordmark";
-
+export { default } from './CucumberPlainWordmark'

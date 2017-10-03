@@ -1,2 +1,1 @@
-export { default } from "./WebstormOriginal";
-
+export { default } from './WebstormOriginal'

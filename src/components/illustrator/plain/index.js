@@ -1,2 +1,1 @@
-export { default } from "./IllustratorPlain";
-
+export { default } from './IllustratorPlain'

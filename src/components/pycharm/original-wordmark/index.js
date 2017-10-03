@@ -1,2 +1,1 @@
-export { default } from "./PycharmOriginalWordmark";
-
+export { default } from './PycharmOriginalWordmark'

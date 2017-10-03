@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './BackbonejsPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** BackbonejsPlainWordmark */
-function BackbonejsPlainWordmark({width, height}) {
+function BackbonejsPlainWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="BackbonejsPlainWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function BackbonejsPlainWordmark({width, height}) {
 
 BackbonejsPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default BackbonejsPlainWordmark

@@ -1,2 +1,1 @@
-export { default } from "./CoffeescriptOriginalWordmark";
-
+export { default } from './CoffeescriptOriginalWordmark'

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './IllustratorLine.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** IllustratorLine */
-function IllustratorLine({width, height}) {
+function IllustratorLine({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="IllustratorLine"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function IllustratorLine({width, height}) {
 
 IllustratorLine.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default IllustratorLine

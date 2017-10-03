@@ -1,2 +1,1 @@
-export { default } from "./UbuntuPlainWordmark";
-
+export { default } from './UbuntuPlainWordmark'

@@ -1,2 +1,1 @@
-export { default } from "./PhpOriginal";
-
+export { default } from './PhpOriginal'

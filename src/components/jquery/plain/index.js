@@ -1,2 +1,1 @@
-export { default } from "./JqueryPlain";
-
+export { default } from './JqueryPlain'

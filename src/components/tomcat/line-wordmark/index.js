@@ -1,2 +1,1 @@
-export { default } from "./TomcatLineWordmark";
-
+export { default } from './TomcatLineWordmark'

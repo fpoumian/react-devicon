@@ -1,39 +1,33 @@
+import React from 'react'
+import { shallow, render } from 'enzyme'
+import BehanceOriginal from '../index.js'
 
-import React from "react"
-import { shallow, render } from "enzyme"
-import BehanceOriginal from "../index.js"
-
-describe("BehanceOriginal", () => {
-  it("should contain one SVGInline element", () => {
+describe('BehanceOriginal', () => {
+  it('should contain one SVGInline element', () => {
     const wrapper = shallow(<BehanceOriginal />)
-    expect(wrapper.is("SVGInline")).toBe(true)
+    expect(wrapper.is('SVGInline')).toBe(true)
   })
-  it("should accept width and height props as integer and convert them to pixels", () => {
-    const wrapper = shallow(
-      <BehanceOriginal height={100} width={100} />
-    )
-    expect(wrapper.props().height).toEqual("100px")
-    expect(wrapper.props().width).toEqual("100px")
+  it('should accept width and height props as integer and convert them to pixels', () => {
+    const wrapper = shallow(<BehanceOriginal height={100} width={100} />)
+    expect(wrapper.props().height).toEqual('100px')
+    expect(wrapper.props().width).toEqual('100px')
   })
 
-  it("should accept width and height props as string", () => {
+  it('should accept width and height props as string', () => {
     const wrapper = shallow(
-      <BehanceOriginal height={"10rem"} width={"10rem"} />
+      <BehanceOriginal height={'10rem'} width={'10rem'} />
     )
-    expect(wrapper.props().height).toEqual("10rem")
-    expect(wrapper.props().width).toEqual("10rem")
+    expect(wrapper.props().height).toEqual('10rem')
+    expect(wrapper.props().width).toEqual('10rem')
   })
 
-  it("should render a span element in DOM", () => {
+  it('should render a span element in DOM', () => {
     const wrapper = render(<BehanceOriginal />)
-    expect(wrapper.find("span")).toHaveLength(1)
-    expect(wrapper.find("span").hasClass("BehanceOriginal")).toBe(
-      true
-    )
+    expect(wrapper.find('span')).toHaveLength(1)
+    expect(wrapper.find('span').hasClass('BehanceOriginal')).toBe(true)
   })
-  it("should render an svg element in DOM", () => {
+  it('should render an svg element in DOM', () => {
     const wrapper = render(<BehanceOriginal />)
-    expect(wrapper.find("svg")).toHaveLength(1)
+    expect(wrapper.find('svg')).toHaveLength(1)
   })
 })
-

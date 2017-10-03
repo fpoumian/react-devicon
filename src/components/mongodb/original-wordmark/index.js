@@ -1,2 +1,1 @@
-export { default } from "./MongodbOriginalWordmark";
-
+export { default } from './MongodbOriginalWordmark'

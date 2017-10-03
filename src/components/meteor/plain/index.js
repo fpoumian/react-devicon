@@ -1,2 +1,1 @@
-export { default } from "./MeteorPlain";
-
+export { default } from './MeteorPlain'

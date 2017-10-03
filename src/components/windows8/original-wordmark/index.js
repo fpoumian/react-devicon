@@ -1,2 +1,1 @@
-export { default } from "./Windows8OriginalWordmark";
-
+export { default } from './Windows8OriginalWordmark'

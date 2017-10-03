@@ -1,2 +1,1 @@
-export { default } from "./HandlebarsOriginal";
-
+export { default } from './HandlebarsOriginal'

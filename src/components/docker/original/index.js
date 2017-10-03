@@ -1,2 +1,1 @@
-export { default } from "./DockerOriginal";
-
+export { default } from './DockerOriginal'

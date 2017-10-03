@@ -1,2 +1,1 @@
-export { default } from "./SassOriginal";
-
+export { default } from './SassOriginal'

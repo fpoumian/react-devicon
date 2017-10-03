@@ -1,2 +1,1 @@
-export { default } from "./GradlePlainWordmark";
-
+export { default } from './GradlePlainWordmark'

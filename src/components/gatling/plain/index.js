@@ -1,2 +1,1 @@
-export { default } from "./GatlingPlain";
-
+export { default } from './GatlingPlain'

@@ -1,2 +1,1 @@
-export { default } from "./InkscapeOriginal";
-
+export { default } from './InkscapeOriginal'

@@ -1,2 +1,1 @@
-export { default } from "./DotNetOriginal";
-
+export { default } from './DotNetOriginal'

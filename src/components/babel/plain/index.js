@@ -1,2 +1,1 @@
-export { default } from "./BabelPlain";
-
+export { default } from './BabelPlain'

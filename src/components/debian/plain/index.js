@@ -1,2 +1,1 @@
-export { default } from "./DebianPlain";
-
+export { default } from './DebianPlain'

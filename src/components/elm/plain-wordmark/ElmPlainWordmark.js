@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
@@ -6,9 +5,9 @@ import iconSVG from './ElmPlainWordmark.svg'
 import { normalizeUnit } from '../../utils.js'
 
 /** ElmPlainWordmark */
-function ElmPlainWordmark({width, height}) {
+function ElmPlainWordmark({ width, height }) {
   return (
-     <SVGInline
+    <SVGInline
       classSuffix="-devicon"
       className="ElmPlainWordmark"
       svg={iconSVG}
@@ -20,7 +19,7 @@ function ElmPlainWordmark({width, height}) {
 
 ElmPlainWordmark.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default ElmPlainWordmark

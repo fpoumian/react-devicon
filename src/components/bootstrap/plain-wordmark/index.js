@@ -1,2 +1,1 @@
-export { default } from "./BootstrapPlainWordmark";
-
+export { default } from './BootstrapPlainWordmark'

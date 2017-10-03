@@ -1,2 +1,1 @@
-export { default } from "./ProtractorPlainWordmark";
-
+export { default } from './ProtractorPlainWordmark'

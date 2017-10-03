@@ -1,2 +1,1 @@
-export { default } from "./SafariOriginal";
-
+export { default } from './SafariOriginal'

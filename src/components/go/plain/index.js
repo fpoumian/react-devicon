@@ -1,2 +1,1 @@
-export { default } from "./GoPlain";
-
+export { default } from './GoPlain'

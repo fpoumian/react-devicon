@@ -1,2 +1,1 @@
-export { default } from "./TrelloPlain";
-
+export { default } from './TrelloPlain'

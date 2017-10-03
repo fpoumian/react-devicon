@@ -1,2 +1,1 @@
-export { default } from "./GitPlain";
-
+export { default } from './GitPlain'

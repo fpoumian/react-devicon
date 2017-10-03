@@ -1,2 +1,1 @@
-export { default } from "./DockerPlainWordmark";
-
+export { default } from './DockerPlainWordmark'

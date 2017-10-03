@@ -1,2 +1,1 @@
-export { default } from "./CakephpPlainWordmark";
-
+export { default } from './CakephpPlainWordmark'

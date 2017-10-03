@@ -1,2 +1,1 @@
-export { default } from "./CodeigniterPlainWordmark";
-
+export { default } from './CodeigniterPlainWordmark'
