@@ -41,7 +41,6 @@
     ]
   },
   "dependencies": {
-    "judex-component-generator": "^0.1.0",
     "react-svg-inline": "^2.0.0"
   },
   "peerDependencies": {
@@ -76,6 +75,7 @@
     "fs-extra": "^4.0.2",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
+    "judex-component-generator": "^0.1.0",
     "lint-staged": "^4.2.3",
     "lodash.isnumber": "^3.0.3",
     "npm-run-all": "4.0.2",
