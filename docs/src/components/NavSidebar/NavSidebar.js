@@ -48,6 +48,7 @@ function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
       </Box>
       <Box
         justify="start"
+        flex={false}
         colorIndex={'neutral-1-t'}
         margin={{ vertical: 'medium' }}
       >

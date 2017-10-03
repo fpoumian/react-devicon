@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children, data }) => {
       </Helmet>
       <Split fixed={true} flex={'right'}>
         <NavSidebarContainer icons={icons} />
-        <Box colorIndex="light-2" pad="large" full={'vertical'}>
+        <Box colorIndex="light-2" pad="large">
           <Section>{children()}</Section>
           <Footer
             justify={'center'}

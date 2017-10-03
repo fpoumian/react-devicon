@@ -33,7 +33,7 @@ class IconPage extends React.Component {
                 pad={{
                   vertical: 'medium',
                 }}
-                key={devicon.name}
+                key={devicon.componentName}
               >
                 <Devicon
                   componentName={devicon.componentName}
