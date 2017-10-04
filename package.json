@@ -1,6 +1,6 @@
 {
   "name": "react-devicon",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React Devicon is a React implementation of the Devicon package, a library that contains the logos of several programming languages and libraries, as well as of different design and development tools.",
   "main": "lib/index.js",
   "author": "Fernando Poumián",
@@ -18,7 +18,7 @@
     "test:sample": "npm run test -- src/components/android/*",
     "generate:components": "node scripts/generateComponents.js",
     "docs:copy-devicon-files": "node scripts/copyDeviconFiles.js",
-    "docs:deploy":"cd docs && yarn build && cd .. && gh-pages -d docs/public",
+    "docs:deploy": "cd docs && yarn build && cd .. && gh-pages -d docs/public",
     "prebuild:lib": "rimraf lib",
     "build": "npm-run-all --parallel build:commonjs build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
