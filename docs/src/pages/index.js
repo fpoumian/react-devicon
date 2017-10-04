@@ -19,7 +19,8 @@ const IndexPage = () => (
           Devicon
         </a>{' '}
         package, a library that contains the logos of several programming
-        languages and libarries, as well as of different design and development tools.{' '}
+        languages and libraries, as well as of different design and development
+        tools.{' '}
       </Paragraph>
 
       <Paragraph size={'large'}>

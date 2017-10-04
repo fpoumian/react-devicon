@@ -18,7 +18,7 @@
     "test:sample": "npm run test -- src/components/android/*",
     "generate:components": "node scripts/generateComponents.js",
     "docs:copy-devicon-files": "node scripts/copyDeviconFiles.js",
-    "docs:deploy":"gh-pages -d docs/public",
+    "docs:deploy":"cd docs && yarn build && cd .. && gh-pages -d docs/public",
     "prebuild:lib": "rimraf lib",
     "build": "npm-run-all --parallel build:commonjs build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
