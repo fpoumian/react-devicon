@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import Link, { navigateTo } from 'gatsby-link'
 import Sidebar from 'grommet/components/Sidebar'
 import Header from 'grommet/components/Header'
 import Box from 'grommet/components/Box'
@@ -35,13 +35,20 @@ function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
         }}
       >
         <Menu inline={false} icon={<MenuIcon />} label={'MENU'}>
-          <Anchor href={'/#install'} icon={<DownloadIcon />}>
+          <Anchor
+            onClick={() => navigateTo('/#install')}
+            icon={<DownloadIcon />}
+          >
             Installation
           </Anchor>
-          <Anchor href={'/#usage'} icon={<CodeIcon />}>
+          <Anchor onClick={() => navigateTo('/#usage')} icon={<CodeIcon />}>
             Usage
           </Anchor>
-          <Anchor href={'#'} target="_blank" icon={<GithubIcon />}>
+          <Anchor
+            href={'https://github.com/fpoumian/react-devicon'}
+            target="_blank"
+            icon={<GithubIcon />}
+          >
             Github Repository
           </Anchor>
         </Menu>
@@ -62,7 +69,7 @@ function NavSidebar({ menuItems, onSearchBoxChange, currentSearchTerm }) {
       <Box flex="grow" justify="start">
         <Menu primary={true}>
           {menuItems.map(item => (
-            <SidebarLink route={item} key={item} active={false} />
+            <SidebarLink route={`${item}`} key={item} active={false} />
           ))}
         </Menu>
       </Box>

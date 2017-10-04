@@ -1,8 +1,10 @@
 const autoprefixer = require('autoprefixer')
 
 module.exports = {
+  pathPrefix: '/react-devicon',
   siteMetadata: {
     title: `React Devicon`,
+    siteUrl: 'https://fpoumian.github.io/react-devicon/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "react-devicon-docs-site",
+  "description": "React Devicon Documentation Site",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Fernando Poumián <fpoumian@gmail.com>",
   "dependencies": {
     "autoprefixer": "^7.1.4",
     "extract-text-webpack-plugin": "1.0.1",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "cross-env NODE_ENV=production gatsby build",
+    "build": "cross-env NODE_ENV=production gatsby build --prefix-paths",
     "develop": "cross-env NODE_ENV=development gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

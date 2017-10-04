@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 
 const SidebarLink = ({ route }) => {
   return (
-    <Link to={route} activeClassName={'active'}>
+    <Link to={`/${route}`} activeClassName={'active'}>
       {route}
     </Link>
   )

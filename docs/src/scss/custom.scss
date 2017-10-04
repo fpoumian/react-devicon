@@ -10,3 +10,7 @@
 code, kbd, pre, samp {
   font-size: 0.9em;
 }
+
+.grommet a:not(.grommetux-anchor):not(.grommetux-button) {
+  text-decoration: none;
+}
