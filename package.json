@@ -4,15 +4,21 @@
   "description": "React Devicon is a React implementation of the Devicon package, a library that contains the logos of several programming languages and libraries, as well as of different design and development tools.",
   "main": "lib/index.js",
   "author": "Fernando Poumián",
+  "homepage": "http://fpoumian.github.io/react-devicon",
   "license": "MIT",
   "keywords": [
     "react",
     "icons",
     "icon",
     "devicon",
+    "devicons",
     "svg",
     "components"
   ],
+  "bugs": {
+    "url": "https://github.com/fpoumian/react-devicon/issues"
+  },
+  "repository": "fpoumian/react-devicon",
   "scripts": {
     "test": "node scripts/test.js --env=jsdom",
     "test:sample": "npm run test -- src/components/android/*",
@@ -26,9 +32,9 @@
     "format-all": "prettier --trailing-comma es5 --no-semi --single-quote --write './src/**/*.js' './scripts/**/*.js' './config/**/*.js' './docs/**/*.js' '!./docs/.cache/**/*.js' '!./docs/node_modules/**/*.js' '!./docs/public/**/*.js'",
     "lint": "eslint .",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
-    "patch": "npm version patch && npm publish lib",
-    "minor": "npm version minor && npm publish lib",
-    "major": "npm version major && npm publish lib",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
     "precommit": "lint-staged",
     "prepublish": "echo 'This package cannot be published directly. Run  \"cd lib && npm publish\" instead' && exit 1"
   },
@@ -39,12 +45,12 @@
     ]
   },
   "dependencies": {
-    "react-svg-inline": "^2.0.0"
+    "react-svg-inline": "^2.0.0",
+    "prop-types": "^15.3.0"
   },
   "peerDependencies": {
-    "prop-types": "^15.0.0",
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+    "react": ">= 15.3.0 < 16 || 16.x",
+    "react-dom": ">= 15.3.0 < 16 || 16.x"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
