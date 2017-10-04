@@ -9,6 +9,10 @@ import ListItem from 'grommet/components/ListItem'
 import Heading from 'grommet/components/Heading'
 
 class IconPage extends React.Component {
+  shouldComponentUpdate() {
+    return false
+  }
+
   render() {
     const { name, versions } = this.props.pathContext
 

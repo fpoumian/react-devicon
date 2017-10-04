@@ -7,7 +7,7 @@ import Animate from 'grommet/components/Animate'
 
 const CopyButton = ({ copiedLabelVisible, dataTip, onCopyBtnClick }) => {
   return (
-    <div>
+    <div style={{ cursor: 'pointer' }}>
       <Pulse icon={<IconCopy />} data-tip={dataTip} onClick={onCopyBtnClick} />
       <ReactTooltip />
       <Animate
