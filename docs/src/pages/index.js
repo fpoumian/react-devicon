@@ -19,7 +19,7 @@ const IndexPage = () => (
           Devicon
         </a>{' '}
         package, a library that contains the logos of several programming
-        languages, as well as of different design and development tools.{' '}
+        languages and libarries, as well as of different design and development tools.{' '}
       </Paragraph>
 
       <Paragraph size={'large'}>
@@ -103,7 +103,7 @@ const IndexPage = () => (
       </Paragraph>
 
       <Paragraph size={'large'}>
-        React Devicon is a project created by{' '}
+        React Devicon is an open source project created by{' '}
         <a target={'_blank'} href={'https://github.com/fpoumian'}>
           Fernando Poumián
         </a>{' '}
