@@ -75,6 +75,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             })
           })
         })
+        // eslint-disable-next-line no-useless-return
+        return
       })
     )
   })
