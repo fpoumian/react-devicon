@@ -20,6 +20,16 @@ Import each icon component from its respective module. You can find the paths fo
 
 Each icon component exposes two props: **width** and **height**. You can enter either a string (i.e. "10em", "100px", etc) or an integer, which will be automatically converted to pixels.
 
+```js
+import IconAmazonwebservices from 'react-devicon/amazonwebservices/original'
+
+  export default () => (
+    <div>
+      <IconAmazonwebservices width={100} height={100}/>
+    </div>
+    )
+```
+
 ## Credits
 All of the SVG files were taken directly from the [Devicon](https://github.com/konpa/devicon) library created by [konpa](https://github.com/konpa).
 
