@@ -35,8 +35,7 @@
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
-    "precommit": "lint-staged",
-    "prepublish": "echo 'This package cannot be published directly. Run  \"cd lib && npm publish\" instead' && exit 1"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
