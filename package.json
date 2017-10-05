@@ -37,7 +37,8 @@
     "minor": "npm version minor && npm run publish:lib",
     "major": "npm version major && npm run publish:lib",
     "precommit": "lint-staged",
-    "publish:lib": "npm run lint && npm run test && npm run build && cd lib && npm publish"
+    "prepublish:lib": "npm run lint && npm run test && npm run build",
+    "publish:lib": "cd lib && npm publish"
   },
   "lint-staged": {
     "*.js": [
