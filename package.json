@@ -6,6 +6,7 @@
   "author": "Fernando Poumián",
   "homepage": "http://fpoumian.github.io/react-devicon",
   "license": "MIT",
+  "private": true,
   "keywords": [
     "react",
     "icons",
@@ -35,7 +36,9 @@
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "whoami": "cd lib && npm whoami",
+    "publish:lib": "npm run lint && npm run test && npm run build && cd lib && npm publish"
   },
   "lint-staged": {
     "*.js": [

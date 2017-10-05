@@ -64,3 +64,4 @@ typings/
 
 # Babel transpiled package
 /lib
+.npmrc
