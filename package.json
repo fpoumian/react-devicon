@@ -37,7 +37,7 @@
     "minor": "npm version minor && npm run publish:lib",
     "major": "npm version major && npm run publish:lib",
     "precommit": "lint-staged",
-    "prepublish:lib": "npm run lint && npm run test && npm run build",
+    "prepublish:lib": "npm run lint && jest --env=jsdom && npm run build",
     "publish:lib": "cd lib && npm publish"
   },
   "lint-staged": {
