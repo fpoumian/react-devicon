@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './VagrantOriginal.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** VagrantOriginal */
 function VagrantOriginal({ width, height }) {
@@ -11,8 +12,8 @@ function VagrantOriginal({ width, height }) {
       classSuffix="-devicon"
       className="VagrantOriginal"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

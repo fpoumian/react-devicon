@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './CsharpLine.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** CsharpLine */
 function CsharpLine({ width, height }) {
@@ -11,8 +12,8 @@ function CsharpLine({ width, height }) {
       classSuffix="-devicon"
       className="CsharpLine"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

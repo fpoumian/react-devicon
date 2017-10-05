@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './D3jsOriginal.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** D3jsOriginal */
 function D3jsOriginal({ width, height }) {
@@ -11,8 +12,8 @@ function D3jsOriginal({ width, height }) {
       classSuffix="-devicon"
       className="D3jsOriginal"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

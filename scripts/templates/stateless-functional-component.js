@@ -1,8 +1,9 @@
 module.exports = `import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './{{ componentName }}.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** {{ componentName }} */
 function {{ componentName }}({width, height}) {
@@ -11,8 +12,8 @@ function {{ componentName }}({width, height}) {
       classSuffix="-devicon"
       className="{{ componentName }}"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

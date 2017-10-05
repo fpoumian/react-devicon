@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './PhpOriginal.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** PhpOriginal */
 function PhpOriginal({ width, height }) {
@@ -11,8 +12,8 @@ function PhpOriginal({ width, height }) {
       classSuffix="-devicon"
       className="PhpOriginal"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

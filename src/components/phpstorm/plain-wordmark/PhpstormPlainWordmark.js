@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './PhpstormPlainWordmark.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** PhpstormPlainWordmark */
 function PhpstormPlainWordmark({ width, height }) {
@@ -11,8 +12,8 @@ function PhpstormPlainWordmark({ width, height }) {
       classSuffix="-devicon"
       className="PhpstormPlainWordmark"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

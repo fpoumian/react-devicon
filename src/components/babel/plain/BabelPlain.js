@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './BabelPlain.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** BabelPlain */
 function BabelPlain({ width, height }) {
@@ -11,8 +12,8 @@ function BabelPlain({ width, height }) {
       classSuffix="-devicon"
       className="BabelPlain"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

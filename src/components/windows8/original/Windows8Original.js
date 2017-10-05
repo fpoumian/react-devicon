@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './Windows8Original.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** Windows8Original */
 function Windows8Original({ width, height }) {
@@ -11,8 +12,8 @@ function Windows8Original({ width, height }) {
       classSuffix="-devicon"
       className="Windows8Original"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

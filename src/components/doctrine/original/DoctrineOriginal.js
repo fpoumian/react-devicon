@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './DoctrineOriginal.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** DoctrineOriginal */
 function DoctrineOriginal({ width, height }) {
@@ -11,8 +12,8 @@ function DoctrineOriginal({ width, height }) {
       classSuffix="-devicon"
       className="DoctrineOriginal"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

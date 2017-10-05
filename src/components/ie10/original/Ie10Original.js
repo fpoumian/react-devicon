@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './Ie10Original.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** Ie10Original */
 function Ie10Original({ width, height }) {
@@ -11,8 +12,8 @@ function Ie10Original({ width, height }) {
       classSuffix="-devicon"
       className="Ie10Original"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

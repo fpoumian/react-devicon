@@ -46,7 +46,8 @@
   },
   "dependencies": {
     "prop-types": "^15.3.0",
-    "react-svg-inline": "^2.0.0"
+    "react-svg-inline": "^2.0.0",
+    "normalize-css-unit": "^1.0.0"
   },
   "peerDependencies": {
     "react": ">= 15.3.0 < 16 || 16.x",
@@ -83,6 +84,7 @@
     "judex-component-generator": "^0.1.0",
     "lint-staged": "^4.2.3",
     "lodash.isnumber": "^3.0.3",
+    "lodash.isstring": "^4.0.1",
     "npm-run-all": "4.0.2",
     "nunjucks": "^3.0.1",
     "pascal-case": "^2.0.1",

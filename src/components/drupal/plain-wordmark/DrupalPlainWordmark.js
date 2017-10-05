@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './DrupalPlainWordmark.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** DrupalPlainWordmark */
 function DrupalPlainWordmark({ width, height }) {
@@ -11,8 +12,8 @@ function DrupalPlainWordmark({ width, height }) {
       classSuffix="-devicon"
       className="DrupalPlainWordmark"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

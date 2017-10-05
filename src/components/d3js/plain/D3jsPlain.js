@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './D3jsPlain.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** D3jsPlain */
 function D3jsPlain({ width, height }) {
@@ -11,8 +12,8 @@ function D3jsPlain({ width, height }) {
       classSuffix="-devicon"
       className="D3jsPlain"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

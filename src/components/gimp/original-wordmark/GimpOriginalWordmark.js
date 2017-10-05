@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './GimpOriginalWordmark.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** GimpOriginalWordmark */
 function GimpOriginalWordmark({ width, height }) {
@@ -11,8 +12,8 @@ function GimpOriginalWordmark({ width, height }) {
       classSuffix="-devicon"
       className="GimpOriginalWordmark"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

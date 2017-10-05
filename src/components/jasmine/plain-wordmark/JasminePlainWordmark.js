@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './JasminePlainWordmark.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** JasminePlainWordmark */
 function JasminePlainWordmark({ width, height }) {
@@ -11,8 +12,8 @@ function JasminePlainWordmark({ width, height }) {
       classSuffix="-devicon"
       className="JasminePlainWordmark"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './NodewebkitLine.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** NodewebkitLine */
 function NodewebkitLine({ width, height }) {
@@ -11,8 +12,8 @@ function NodewebkitLine({ width, height }) {
       classSuffix="-devicon"
       className="NodewebkitLine"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

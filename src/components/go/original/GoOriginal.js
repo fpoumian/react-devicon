@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './GoOriginal.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** GoOriginal */
 function GoOriginal({ width, height }) {
@@ -11,8 +12,8 @@ function GoOriginal({ width, height }) {
       classSuffix="-devicon"
       className="GoOriginal"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

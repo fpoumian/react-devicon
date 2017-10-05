@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './DebianPlainWordmark.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** DebianPlainWordmark */
 function DebianPlainWordmark({ width, height }) {
@@ -11,8 +12,8 @@ function DebianPlainWordmark({ width, height }) {
       classSuffix="-devicon"
       className="DebianPlainWordmark"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SVGInline from 'react-svg-inline'
+import normalizeCSSUnit from 'normalize-css-unit'
+
 import iconSVG from './JavaOriginalWordmark.svg'
-import { normalizeUnit } from '../../utils.js'
 
 /** JavaOriginalWordmark */
 function JavaOriginalWordmark({ width, height }) {
@@ -11,8 +12,8 @@ function JavaOriginalWordmark({ width, height }) {
       classSuffix="-devicon"
       className="JavaOriginalWordmark"
       svg={iconSVG}
-      width={normalizeUnit(width)}
-      height={normalizeUnit(height)}
+      width={width ? normalizeCSSUnit(width) : ''}
+      height={height ? normalizeCSSUnit(height) : ''}
     />
   )
 }
