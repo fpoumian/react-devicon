@@ -39,14 +39,14 @@
     "prepublish": "echo 'This package cannot be published directly. Run  \"cd lib && npm publish\" instead' && exit 1"
   },
   "lint-staged": {
-    "*.{js}": [
+    "*.js": [
       "eslint --fix",
       "git add"
     ]
   },
   "dependencies": {
-    "react-svg-inline": "^2.0.0",
-    "prop-types": "^15.3.0"
+    "prop-types": "^15.3.0",
+    "react-svg-inline": "^2.0.0"
   },
   "peerDependencies": {
     "react": ">= 15.3.0 < 16 || 16.x",
@@ -91,7 +91,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-docgen": "2.14.0",
     "react-dom": "15.5.4",
-    "react-test-renderer": "^16.0.0",
+    "react-test-renderer": "^15.0.0",
     "recursive-copy": "^2.0.6",
     "standard": "^10.0.3",
     "svgo": "^0.7.2"
