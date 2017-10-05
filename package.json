@@ -33,11 +33,10 @@
     "format-all": "prettier --trailing-comma es5 --no-semi --single-quote --write './src/**/*.js' './scripts/**/*.js' './config/**/*.js' './docs/**/*.js' '!./docs/.cache/**/*.js' '!./docs/node_modules/**/*.js' '!./docs/public/**/*.js'",
     "lint": "eslint .",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
-    "patch": "npm version patch",
-    "minor": "npm version minor",
-    "major": "npm version major",
+    "patch": "npm version patch && npm run publish:lib",
+    "minor": "npm version minor && npm run publish:lib",
+    "major": "npm version major && npm run publish:lib",
     "precommit": "lint-staged",
-    "whoami": "cd lib && npm whoami",
     "publish:lib": "npm run lint && npm run test && npm run build && cd lib && npm publish"
   },
   "lint-staged": {
