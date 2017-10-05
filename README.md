@@ -1,4 +1,7 @@
 # React Devicon
+[![Build Status](https://travis-ci.org/fpoumian/react-devicon.svg?branch=master)](https://travis-ci.org/fpoumian/react-devicon)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 https://fpoumian.github.io/react-devicon/
 
 React Devicon is a React implementation of the [Devicon](https://github.com/konpa/devicon) package, a library that contains the logos of several programming languages and libraries, as well as of different design and development tools.
