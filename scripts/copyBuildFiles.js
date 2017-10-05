@@ -75,10 +75,6 @@ function createPackageFile() {
         homepage,
         peerDependencies,
         dependencies,
-        scripts: {
-          prepublish:
-            'cd .. && npm run lint && ./node_modules/.bin/jest --env=jsdom && npm run build',
-        },
       }
 
       return new Promise(resolve => {
