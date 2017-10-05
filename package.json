@@ -20,7 +20,7 @@
   },
   "repository": "fpoumian/react-devicon",
   "scripts": {
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "node scripts/test.js",
     "test:sample": "npm run test -- src/components/android/*",
     "generate:components": "node scripts/generateComponents.js",
     "docs:copy-devicon-files": "node scripts/copyDeviconFiles.js",
