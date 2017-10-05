@@ -1,24 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SVGInline from 'react-svg-inline'
-import normalizeCSSUnit from 'normalize-css-unit'
+import SVGDeviconInline from '../../_base/SVGDeviconInline'
 
 import iconSVG from './LinkedinPlainWordmark.svg'
 
 /** LinkedinPlainWordmark */
-function LinkedinPlainWordmark({ width, height }) {
+function LinkedinPlainWordmark({ width, height, className }) {
   return (
-    <SVGInline
-      classSuffix="-devicon"
-      className="LinkedinPlainWordmark"
-      svg={iconSVG}
-      width={width ? normalizeCSSUnit(width) : ''}
-      height={height ? normalizeCSSUnit(height) : ''}
+    <SVGDeviconInline
+      className={'LinkedinPlainWordmark' + ' ' + className}
+      iconSVG={iconSVG}
+      width={width}
+      height={height}
     />
   )
 }
 
 LinkedinPlainWordmark.propTypes = {
+  className: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }

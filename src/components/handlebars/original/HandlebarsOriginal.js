@@ -1,24 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SVGInline from 'react-svg-inline'
-import normalizeCSSUnit from 'normalize-css-unit'
+import SVGDeviconInline from '../../_base/SVGDeviconInline'
 
 import iconSVG from './HandlebarsOriginal.svg'
 
 /** HandlebarsOriginal */
-function HandlebarsOriginal({ width, height }) {
+function HandlebarsOriginal({ width, height, className }) {
   return (
-    <SVGInline
-      classSuffix="-devicon"
-      className="HandlebarsOriginal"
-      svg={iconSVG}
-      width={width ? normalizeCSSUnit(width) : ''}
-      height={height ? normalizeCSSUnit(height) : ''}
+    <SVGDeviconInline
+      className={'HandlebarsOriginal' + ' ' + className}
+      iconSVG={iconSVG}
+      width={width}
+      height={height}
     />
   )
 }
 
 HandlebarsOriginal.propTypes = {
+  className: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }

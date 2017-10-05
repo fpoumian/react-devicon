@@ -1,24 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SVGInline from 'react-svg-inline'
-import normalizeCSSUnit from 'normalize-css-unit'
+import SVGDeviconInline from '../../_base/SVGDeviconInline'
 
 import iconSVG from './CoffeescriptOriginalWordmark.svg'
 
 /** CoffeescriptOriginalWordmark */
-function CoffeescriptOriginalWordmark({ width, height }) {
+function CoffeescriptOriginalWordmark({ width, height, className }) {
   return (
-    <SVGInline
-      classSuffix="-devicon"
-      className="CoffeescriptOriginalWordmark"
-      svg={iconSVG}
-      width={width ? normalizeCSSUnit(width) : ''}
-      height={height ? normalizeCSSUnit(height) : ''}
+    <SVGDeviconInline
+      className={'CoffeescriptOriginalWordmark' + ' ' + className}
+      iconSVG={iconSVG}
+      width={width}
+      height={height}
     />
   )
 }
 
 CoffeescriptOriginalWordmark.propTypes = {
+  className: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }

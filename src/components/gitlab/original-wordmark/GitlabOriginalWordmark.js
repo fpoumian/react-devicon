@@ -1,24 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SVGInline from 'react-svg-inline'
-import normalizeCSSUnit from 'normalize-css-unit'
+import SVGDeviconInline from '../../_base/SVGDeviconInline'
 
 import iconSVG from './GitlabOriginalWordmark.svg'
 
 /** GitlabOriginalWordmark */
-function GitlabOriginalWordmark({ width, height }) {
+function GitlabOriginalWordmark({ width, height, className }) {
   return (
-    <SVGInline
-      classSuffix="-devicon"
-      className="GitlabOriginalWordmark"
-      svg={iconSVG}
-      width={width ? normalizeCSSUnit(width) : ''}
-      height={height ? normalizeCSSUnit(height) : ''}
+    <SVGDeviconInline
+      className={'GitlabOriginalWordmark' + ' ' + className}
+      iconSVG={iconSVG}
+      width={width}
+      height={height}
     />
   )
 }
 
 GitlabOriginalWordmark.propTypes = {
+  className: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
