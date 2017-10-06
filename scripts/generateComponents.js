@@ -2,8 +2,11 @@ const fs = require('fs-extra')
 const path = require('path')
 const paths = require('../config/paths')
 const judex = require('judex-component-generator')
+const chalk = require('chalk')
 const pascalCase = require('pascal-case')
-const { getDeviconPath, getDeviconManifestFile } = require('./devicon')
+const log = console.log
+
+const { getDeviconManifestFile } = require('./devicon')
 const SVGO = require('svgo')
 
 // global
@@ -29,6 +32,8 @@ function generateIconComponent(iconName, iconVersion) {
   const svgFileName = `${iconName}-${iconVersion}.svg`
   const svgFilePath = path.resolve(deviconPath, 'icons', iconName, svgFileName)
 
+  log(chalk.blue(`Generating Component ${componentName}...`))
+
   return new Promise((resolve, reject) => {
     generator
       .generate(`${iconName}/${iconVersion}/${componentName}`, {
@@ -53,10 +58,22 @@ function generateIconComponent(iconName, iconVersion) {
               iconVersion
             )
           })
+          .then(() =>
+            log(
+              chalk.green(
+                `Component ${componentName} written to ${componentPaths.root}`
+              )
+            )
+          )
           .then(() => fs.readdir(componentPaths.root))
           .then(dirContents => resolve(dirContents))
       })
       .on('error', error => {
+        log(
+          chalk.red(
+            `There was an error trying to generate component ${componentName}`
+          )
+        )
         reject(error)
       })
   })
@@ -92,17 +109,28 @@ function optimizeSVG(data) {
   })
 }
 
+// latest devicon package was (for some reason?) released in a separate NPM package named devicon-2.2
+const deviconPackageName = 'devicon-2.2'
 // Check if devicon package is installed locally
 // If not, abort the script
 try {
-  deviconPath = getDeviconPath()
+  deviconPath = path.dirname(require.resolve(deviconPackageName))
 } catch (e) {
-  console.error('Package "devicon" was not found in node_modules.')
-  console.error(
-    'Please install using "yarn add devicon" or "npm install devicon --save"'
+  log(
+    chalk.red(`Package "${deviconPackageName}" was not found in node_modules`)
   )
+
+  log(
+    chalk.red(
+      `Please install using "yarn add ${deviconPackageName} --dev" or "npm install ${deviconPackageName} --save-dev"`
+    )
+  )
+
   process.exit(e.code)
 }
+
+// Start generating components
+log(chalk.blue(`Starting component generations script...`))
 
 fs
   .outputFile(componentsIndex, '')
@@ -114,8 +142,18 @@ fs
   .then(() => getDeviconManifestFile())
   .then(fs.readJson)
   .then(generateComponents)
+  .then(dirContents => {
+    return log(
+      chalk.yellow(
+        `Generated ${dirContents.length} components into ${paths.components}`
+      )
+    )
+  })
   .then(() => {
     return indexFileWriteStream.end()
+  })
+  .then(() => {
+    log(chalk.yellow(`Components index file written to ${componentsIndex}`))
   })
   .catch(err => {
     process.exit(err.code)

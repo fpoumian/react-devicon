@@ -1,16 +1,6 @@
 const path = require('path')
 const fs = require('fs-extra')
 
-const getDeviconPath = function() {
-  try {
-    return path.dirname(require.resolve('devicon-2.2'))
-  } catch (e) {
-    throw e
-  }
-}
-
-module.exports.getDeviconPath = getDeviconPath
-
 module.exports.getDeviconManifestFile = function() {
   return new Promise((resolve, reject) => {
     const iconsManifestFile = path.resolve(
