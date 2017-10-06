@@ -24,7 +24,6 @@ const generator = judex({
   rules: {
     'component-name-root-dir': false,
   },
-  plugins: ['tests-file'],
 })
 
 function generateIconComponent(iconName, iconVersion) {
